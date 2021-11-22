@@ -1,0 +1,86 @@
+#include "Game.h"
+
+
+Game::Game() {
+    //локализация для юникода
+    std::locale::global(std::locale("en_US.utf8"));
+
+    //инициализация объектов
+    BuilderField builder;
+    m_alien = std::make_unique<CleverAlien>();
+
+    /*auto curos = std::make_unique<Croissant>();
+    auto sword = std::make_unique<Sword>();
+    auto shield = std::make_unique<Shield>();
+    auto skelet = std::make_unique<HorizontalSkeleton>();
+    auto skelet2 = std::make_unique<HorizontalSkeleton>();
+    auto scorpion = std::make_unique<VerticalScorpion>();*/
+
+    //строительство поля
+    builder.createEmptyField(20,20); //диапазон x = [1,20], y = [1,30]
+    //builder.buildRandomImpassableCells(20);
+    m_player = builder.buildStartCell(8, 1);
+    builder.buildEndCell();
+    builder.buildEndCell();
+    m_field1 = builder.getField();
+
+    //инициализация логерра
+    auto cons_log = std::make_unique<ConsoleLog>();
+    auto f_log = std::make_unique<FileLog>("flog.txt");
+    m_logger = std::make_unique<Logger>(std::move(f_log));
+    m_logger->addLog(std::move(cons_log));
+
+    m_logger->addObservable(m_alien.get());
+    m_logger->addObservable(m_player.get());
+    /*logger.addObservable(skelet.get());
+    logger.addObservable(skelet2.get());
+    logger.addObservable(scorpion.get());
+
+    logger.addObservable(sword.get());
+    logger.addObservable(curos.get());
+    logger.addObservable(shield.get());*/
+
+    m_alien->follow(m_player.get());
+    m_alien->setLocation(10, 5, m_field1.get());
+    /*skelet->setLocation(15, 1, field1.get());
+    scorpion->setLocation(5, 5, field1.get());
+    sword->setLocation(1, 1, std::move(sword), field1.get());
+    curos->setLocation(15, 10, std::move(curos), field1.get());
+    shield->setLocation(1, 10, std::move(shield), field1.get());
+    skelet2->setLocation(20, 20, field1.get());*/
+
+}
+
+void Game::update() {
+    if (m_player->getAlive()){
+        if(m_player->win()){
+            state_game = WIN;
+            return;
+        }
+        m_player->update();
+    } else {
+        state_game = LOSE;
+        return;
+    }
+
+    if (m_alien->getAlive()){
+        m_alien->update();
+    }
+}
+
+Game::~Game() {
+    //сбрасываем локаль , иначе будет утечка памяти
+    std::locale::global(std::locale("C"));
+}
+
+Field *Game::getField() {
+    return m_field1.get();
+}
+
+StateGame Game::gameState() {
+    return state_game;
+}
+
+Logger *Game::getLogger() {
+    return m_logger.get();
+}

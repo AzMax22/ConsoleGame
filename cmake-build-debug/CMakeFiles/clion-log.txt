@@ -1,0 +1,4 @@
+/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/cmake-build-debug
