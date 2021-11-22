@@ -5,7 +5,6 @@
 #include <vector>
 #include <string>
 #include "Logger.h"
-#include "GameObject.h"
 
 class Observable {
 private:

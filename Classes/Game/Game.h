@@ -8,6 +8,7 @@
 #include "Logger.h"
 #include "FileLog.h"
 #include "ConsoleLog.h"
+#include "Event.h"
 
 enum StateGame{
     RUN,
@@ -15,7 +16,7 @@ enum StateGame{
     LOSE
 };
 
-class Game {
+class Game : public GameObject{
     unq_p<Field> m_field1;
     unq_p<Player> m_player ;
     unq_p<CleverAlien> m_alien;
@@ -31,6 +32,7 @@ public:
     Field* getField();
     Logger* getLogger();
 
+    std::string name() override;
 
 
     ~Game();

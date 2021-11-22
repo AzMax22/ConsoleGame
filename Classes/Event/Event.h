@@ -7,6 +7,7 @@
 
 #include "GameObject.h"
 
+
 ///////////////////////////////////////// IEvent ////////////////////////////////////////////////////
 class IEvent{
     GameObject* m_obj;
@@ -95,5 +96,11 @@ public:
     EventAffect(GameObject* obj, GameObject* another_obj);
 
     GameObject& getAnotherObj();
+};
+
+//////////////////////////////////// EventEndGame ////////////////////////////////////////////////////
+class EventEndGame : public IEvent{
+public:
+    EventEndGame(GameObject* obj);
 };
 #endif //CONSOLE_GAME_EVENT_H

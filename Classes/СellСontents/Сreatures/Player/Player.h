@@ -20,7 +20,7 @@ class Player : public ICreature{
         //которая будет уведомлять World ,о том что игрок достиг конечной клетки
         //и убрать игрока из коллекции автономных обьектов
         //в том числе и очистить Player::update()
-        void setLocation(int x, int y, Field* field) override;
+    void setLocation(int x, int y, Field* field) override;
 public:
     Player();
 

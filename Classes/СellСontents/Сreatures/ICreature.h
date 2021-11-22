@@ -5,7 +5,7 @@
 #include "IAutonomy.h"
 #include "Field.h"
 #include "Observable.h"
-#include "GameObject.h"
+#include "LocatedObject.h"
 
 
 enum TypeCreature {
@@ -17,7 +17,7 @@ enum TypeCreature {
 
 
 //интерфейс для обектов которые могут стоять на (содержатся в) Cell
-class ICreature : public IAutonomy, public Observable, public GameObject{
+class ICreature : public IAutonomy, public Observable, public LocatedObject{
 protected:
     int m_max_health ;
     int m_health ;

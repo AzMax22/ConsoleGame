@@ -12,6 +12,8 @@ int GameObject::getID() {
 
 
 std::ostream &operator<<(std::ostream &out, GameObject &obj) {
-    out << obj.name() + std::to_string(obj.getID()) + " ";
+    out << obj.name() + "[" + std::to_string(obj.getID()) + "] ";
     return out;
 }
+
+

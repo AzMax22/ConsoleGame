@@ -3,7 +3,7 @@
 
 #include "ICreature.h"
 #include "Player.h"
-#include "GameObject.h"
+
 
 
 class CleverAlien : public ICreature {

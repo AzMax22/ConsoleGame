@@ -30,22 +30,6 @@ memory
 unq_p.h
 ../Classes/Field/unq_p.h
 
-../Classes/Game/Game.h
-BuilderField.h
-../Classes/Game/BuilderField.h
-Field.h
-../Classes/Game/Field.h
-unq_p.h
-../Classes/Game/unq_p.h
-CleverAlien.h
-../Classes/Game/CleverAlien.h
-Logger.h
-../Classes/Game/Logger.h
-FileLog.h
-../Classes/Game/FileLog.h
-ConsoleLog.h
-../Classes/Game/ConsoleLog.h
-
 ../Classes/GameObject/GameObject.h
 string
 ../Classes/GameObject/string
@@ -61,8 +45,6 @@ vector
 -
 ILog.h
 ../Classes/Logging/Logger/ILog.h
-GameObject.h
-../Classes/Logging/Logger/GameObject.h
 Event.h
 ../Classes/Logging/Logger/Event.h
 unq_p.h
@@ -91,26 +73,8 @@ string
 -
 Logger.h
 ../Classes/Logging/Observable/Logger.h
-GameObject.h
-../Classes/Logging/Observable/GameObject.h
-
-../Classes/View/ViewField/ViewField.h
-unq_p.h
-../Classes/View/ViewField/unq_p.h
-Field.h
-../Classes/View/ViewField/Field.h
-
-../Classes/View/ViewGame/ViewGame.h
-Game.h
-../Classes/View/ViewGame/Game.h
-ViewField.h
-../Classes/View/ViewGame/ViewField.h
 
 ../Classes/СellСontents/IAutonomy.h
-
-../Classes/СellСontents/Items/Croissant/Croissant.h
-IItem.h
-../Classes/СellСontents/Items/Croissant/IItem.h
 
 ../Classes/СellСontents/Items/IItem.h
 unq_p.h
@@ -118,37 +82,15 @@ unq_p.h
 ICreature.h
 ../Classes/СellСontents/Items/ICreature.h
 
-../Classes/СellСontents/Items/Shield/Shield.h
-IItem.h
-../Classes/СellСontents/Items/Shield/IItem.h
-
-../Classes/СellСontents/Items/Sword/Sword.h
-IItem.h
-../Classes/СellСontents/Items/Sword/IItem.h
+../Classes/СellСontents/LocatedObject.h
+GameObject.h
+../Classes/СellСontents/GameObject.h
 
 ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h
 ICreature.h
 ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/ICreature.h
 Player.h
 ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/Player.h
-GameObject.h
-../Classes/СellСontents/Сreatures/Enemies/CleverAlien/GameObject.h
-
-../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.h
-ICreature.h
-../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/ICreature.h
-unq_p.h
-../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/unq_p.h
-GameObject.h
-../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/GameObject.h
-Observable.h
-../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/Observable.h
-
-../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.h
-ICreature.h
-../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/ICreature.h
-GameObject.h
-../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/GameObject.h
 
 ../Classes/СellСontents/Сreatures/ICreature.h
 unq_p.h
@@ -159,8 +101,8 @@ Field.h
 ../Classes/СellСontents/Сreatures/Field.h
 Observable.h
 ../Classes/СellСontents/Сreatures/Observable.h
-GameObject.h
-../Classes/СellСontents/Сreatures/GameObject.h
+LocatedObject.h
+../Classes/СellСontents/Сreatures/LocatedObject.h
 
 ../Classes/СellСontents/Сreatures/Player/Player.h
 ICreature.h
@@ -174,47 +116,25 @@ GameObject.h
 memory
 -
 
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/Game.cpp
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.cpp
 Game.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/Game.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.h
 
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/Game.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.h
 BuilderField.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/BuilderField.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/BuilderField.h
 Field.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/Field.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Field.h
 unq_p.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/unq_p.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/unq_p.h
 CleverAlien.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/CleverAlien.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/CleverAlien.h
 Logger.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/Logger.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Logger.h
 FileLog.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/FileLog.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/FileLog.h
 ConsoleLog.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/ConsoleLog.h
-
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/main.cpp
-iostream
--
-HorizontalSkeleton.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/HorizontalSkeleton.h
-VerticalScorpion.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/VerticalScorpion.h
-unistd.h
--
-Player.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Player.h
-Items/Sword/Sword.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Items/Sword/Sword.h
-Croissant.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Croissant.h
-Shield.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Shield.h
-ViewField.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/ViewField.h
-ViewGame.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/ViewGame.h
-Game.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Game.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/ConsoleLog.h
+Event.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Event.h
 

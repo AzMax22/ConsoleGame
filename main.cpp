@@ -1,17 +1,7 @@
 #include <iostream>
 
-#include "HorizontalSkeleton.h"
-#include "VerticalScorpion.h"
-#include <unistd.h>
-#include "Player.h"
-#include "Items/Sword/Sword.h"
-#include "Croissant.h"
-#include "Shield.h"
-#include "ViewField.h"
 #include "ViewGame.h"
 #include "Game.h"
-
-
 
 
 int main() {

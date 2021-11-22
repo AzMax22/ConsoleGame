@@ -55,11 +55,17 @@ void Game::update() {
     if (m_player->getAlive()){
         if(m_player->win()){
             state_game = WIN;
+
+            EventEndGame event(this);
+            m_logger->processNotification(event);
             return;
         }
         m_player->update();
     } else {
         state_game = LOSE;
+
+        EventEndGame event(this);
+        m_logger->processNotification(event);
         return;
     }
 
@@ -83,4 +89,8 @@ StateGame Game::gameState() {
 
 Logger *Game::getLogger() {
     return m_logger.get();
+}
+
+std::string Game::name() {
+    return "Игра ";
 }

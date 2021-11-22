@@ -13,9 +13,6 @@ public:
 
     virtual std::string name() = 0;
 
-    virtual int getX() = 0;
-    virtual int getY() = 0;
-
     int getID() ;
 
     friend std::ostream& operator<< (std::ostream &out,  GameObject& obj);

@@ -86,3 +86,8 @@ EventAffect::EventAffect(GameObject *obj, GameObject *another_obj): IEvent(obj) 
 GameObject &EventAffect::getAnotherObj() {
     return *m_another_obj;
 }
+
+//////////////////////////////////// EventEndGame ////////////////////////////////////////////////////
+EventEndGame::EventEndGame(GameObject* obj): IEvent(obj) {
+
+}

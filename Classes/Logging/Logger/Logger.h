@@ -7,11 +7,13 @@
 #include <string>
 #include <vector>
 #include "ILog.h"
-#include "GameObject.h"
 #include "Event.h"
 #include "unq_p.h"
 
+
+
 class Observable;
+
 
 class Logger{
     std::vector<unq_p<ILog>> logs;
@@ -31,6 +33,7 @@ public:
     void processNotification(EventSetLocation& event);
     void processNotification(EventDeath& event);
     void processNotification(EventAffect& event);
+    void processNotification(EventEndGame& event);
 };
 
 

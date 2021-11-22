@@ -1,7 +1,8 @@
 #include "Logger.h"
-#include "Observable.h"
 #include "ICreature.h"
-
+#include "LocatedObject.h"
+#include "Game.h"
+#include "GameObject.h"
 
 Logger::Logger(unq_p<ILog> some_steam) {
     logs.push_back(std::move(some_steam));
@@ -27,6 +28,7 @@ void Logger::addObservable(Observable* some_obsle) {
 
 
 void Logger::processNotification(EventMove& event) {
+    auto &obj = dynamic_cast<LocatedObject&>(event.getObjEvent());
     std::string move_where;
 
     if (event.getIncX() == 0) {
@@ -51,15 +53,17 @@ void Logger::processNotification(EventMove& event) {
 
     for(auto&& some_log : logs){
         some_log->steam() << event.getObjEvent() << "переместился " << move_where << ", текущее местоположение " \
-        <<"x = " << event.getObjEvent().getX() << ", y = " << event.getObjEvent().getY() << std::endl;
+        <<"x = " << obj.getX() << ", y = " << obj.getY() << std::endl;
     }
 }
 
 
 void Logger::processNotification(EventReversal &event) {
+    auto &obj = dynamic_cast<LocatedObject&>(event.getObjEvent());
+
     for(auto&& some_log : logs){
         some_log->steam() << event.getObjEvent() << "развернулся " << ", текущее местоположение " \
-        <<"x = " << event.getObjEvent().getX() << ", y = " << event.getObjEvent().getY() << std::endl;
+        <<"x = " << obj.getX() << ", y = " << obj.getY() << std::endl;
     }
 }
 
@@ -119,9 +123,11 @@ void Logger::processNotification(EventToAttack &event) {
 }
 
 void Logger::processNotification(EventSetLocation &event) {
+    auto &obj = dynamic_cast<LocatedObject&>(event.getObjEvent());
+
     for(auto&& some_log : logs) {
         some_log->steam() << event.getObjEvent() << "поставлен на координаты " <<"x = " \
-        << event.getObjEvent().getX() << ", y = " << event.getObjEvent().getY() << std::endl;
+        << obj.getX() << ", y = " << obj.getY() << std::endl;
     }
 }
 
@@ -135,6 +141,25 @@ void Logger::processNotification(EventAffect &event) {
     for(auto&& some_log : logs) {
         some_log->steam() << event.getObjEvent() << "воздействоет на " << event.getAnotherObj() << std::endl;
     }
+}
+
+void Logger::processNotification(EventEndGame &event) {
+    auto &obj = dynamic_cast<Game&>(event.getObjEvent());
+
+    if (obj.gameState() == WIN) {
+        for (auto &&some_log: logs) {
+            some_log->steam() << "Игрок победил" << std::endl;
+        }
+    }else {
+        for (auto &&some_log: logs) {
+            some_log->steam() << "Игрок проиграл" << std::endl;
+        }
+    }
+
+    for (auto &&some_log: logs) {
+        some_log->steam() << "Конец Игры" << std::endl;
+    }
+
 }
 
 

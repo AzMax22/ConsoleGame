@@ -8,76 +8,76 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/cmake-build-debug"/>
+				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/cmake-build-debug"/>
+				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/cmake-build-debug"/>
+				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Console_Game">
-				<Option output="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/cmake-build-debug/Console_Game" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/cmake-build-debug"/>
+				<Option output="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/Console_Game" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Field"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/BuilderField"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/LogAdapterEN"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/FileLog"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/ConsoleLog"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Event"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewGame"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/NormalCell"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/StartCell"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/EndCell"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/CleverAlien"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Observable"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/."/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewField"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Player"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewCell"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Console"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/My_List"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Croissant"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Shield"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logger"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/IGeneratorLogMes"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/GameObject"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Events/IEvent"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/IGeneratorLogMes/GeneratorLogMesRU"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/BuilderField"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/LogAdapterEN"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/FileLog"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/ConsoleLog"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Event"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/NormalCell"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/StartCell"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/EndCell"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/CleverAlien"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Observable"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/."/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewField"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Player"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewCell"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Console"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/My_List"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Croissant"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Shield"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logger"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/IGeneratorLogMes"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/GameObject"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Events/IEvent"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/IGeneratorLogMes/GeneratorLogMesRU"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -87,53 +87,53 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 Console_Game"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 Console_Game"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Console_Game/fast">
-				<Option output="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/cmake-build-debug/Console_Game" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/cmake-build-debug"/>
+				<Option output="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/Console_Game" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Field"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/BuilderField"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/LogAdapterEN"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/FileLog"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/ConsoleLog"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Event"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewGame"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/NormalCell"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/StartCell"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/EndCell"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/CleverAlien"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Observable"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/."/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewField"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Player"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewCell"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Console"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/My_List"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Croissant"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Shield"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logger"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/IGeneratorLogMes"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/GameObject"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Events/IEvent"/>
-					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/IGeneratorLogMes/GeneratorLogMesRU"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/BuilderField"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/LogAdapterEN"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/FileLog"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/ConsoleLog"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Event"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/NormalCell"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/StartCell"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/EndCell"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/CleverAlien"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Observable"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/."/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewField"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Player"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewCell"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Console"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/My_List"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Croissant"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Shield"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logger"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/IGeneratorLogMes"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/GameObject"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Events/IEvent"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/IGeneratorLogMes/GeneratorLogMesRU"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -143,188 +143,191 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 Console_Game/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/Console_Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 Console_Game/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/BuilderField/BuilderField.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/BuilderField/BuilderField.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/BuilderField/BuilderField.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/BuilderField/BuilderField.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/EndCell/EndCell.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/EndCell/EndCell.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/EndCell/EndCell.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/EndCell/EndCell.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/ICell.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/ICell.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/NormalCell/NormalCell.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/NormalCell/NormalCell.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/NormalCell/NormalCell.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/NormalCell/NormalCell.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/StartCell/StartCell.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/StartCell/StartCell.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Cells/StartCell/StartCell.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/StartCell/StartCell.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Console/Console.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Console/Console.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Console/Console.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Console/Console.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Event/Event.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Event/Event.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Event/Event.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Event/Event.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Field/Field.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field/Field.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Field/Field.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field/Field.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/Game.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Game/Game.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/GameObject/GameObject.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/GameObject/GameObject.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/GameObject/GameObject.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/GameObject/GameObject.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logger/Logger.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logger/Logger.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logger/Logger.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logger/Logger.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/ConsoleLog/ConsoleLog.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/ConsoleLog/ConsoleLog.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/ConsoleLog/ConsoleLog.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/ConsoleLog/ConsoleLog.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/FileLog/FileLog.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/FileLog/FileLog.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/FileLog/FileLog.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/FileLog/FileLog.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/ILog.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/ILog.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Logs/ILog.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/ILog.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Observable/Observable.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Observable/Observable.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/Logging/Observable/Observable.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Observable/Observable.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewCell/ViewCell.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewCell/ViewCell.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewCell/ViewCell.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewCell/ViewCell.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewField/ViewField.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewField/ViewField.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewField/ViewField.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewField/ViewField.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewGame/ViewGame.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/View/ViewGame/ViewGame.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/IAutonomy.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/IAutonomy.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/IAutonomy.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/IAutonomy.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Croissant/Croissant.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Croissant/Croissant.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Croissant/Croissant.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Croissant/Croissant.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/IItem.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/IItem.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/IItem.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/IItem.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Shield/Shield.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Shield/Shield.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Shield/Shield.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Shield/Shield.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Sword/Sword.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Sword/Sword.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Items/Sword/Sword.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Sword/Sword.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/LocatedObject.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/ICreature.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/ICreature.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/ICreature.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Player/Player.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/ICreature.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/Classes/СellСontents/Сreatures/Player/Player.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Player/Player.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/My_Exception.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Player/Player.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/main.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/My_Exception.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/unq_p.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/main.cpp">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/Console_Game/CMakeLists.txt">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/unq_p.h">
+			<Option target="Console_Game"/>
+		</Unit>
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

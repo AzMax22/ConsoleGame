@@ -38,7 +38,7 @@ add_executable(Console_Game main.cpp
         Classes/Event/Event.h Classes/Event/Event.cpp Classes/Logging/Logs/ConsoleLog/ConsoleLog.cpp
         Classes/Logging/Logs/ConsoleLog/ConsoleLog.h Classes/Logging/Logs/ILog.cpp
         Classes/Game/Game.cpp Classes/Game/Game.h
-        Classes/View/ViewGame/ViewGame.cpp Classes/View/ViewGame/ViewGame.h)
+        Classes/View/ViewGame/ViewGame.cpp Classes/View/ViewGame/ViewGame.h Classes/СellСontents/LocatedObject.h)
 
 target_include_directories(
         Console_Game                           # Цель, при сборке которой учитываются указанные пути к заголовочным файлам
@@ -50,6 +50,7 @@ target_include_directories(
         Classes/Logging/Logs
         Classes/Logging/Logs/ConsoleLog/
         Classes/Event
+        Classes/СellСontents/
         Classes/View/ViewGame
         Classes/Game/
         Classes/Cells/NormalCell

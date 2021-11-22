@@ -12,7 +12,7 @@ enum TypeItem {
 };
 
 
-class IItem : public Observable, public GameObject {
+class IItem : public Observable, public LocatedObject {
 protected:
     int m_x, m_y; //координаты на поле
     Field* m_field; //указатель на поле

@@ -14,6 +14,7 @@ CMakeFiles/Console_Game.dir/Classes/BuilderField/BuilderField.cpp.o: \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../Classes/СellСontents/Сreatures/Player/Player.h \
  ../My_Exception.h \
@@ -31,6 +32,7 @@ CMakeFiles/Console_Game.dir/Classes/Cells/EndCell/EndCell.cpp.o: \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../Classes/СellСontents/Сreatures/Player/Player.h \
  ../unq_p.h \
@@ -46,6 +48,7 @@ CMakeFiles/Console_Game.dir/Classes/Cells/NormalCell/NormalCell.cpp.o: \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../unq_p.h \
  ../Classes/Cells/NormalCell/NormalCell.cpp \
@@ -61,6 +64,7 @@ CMakeFiles/Console_Game.dir/Classes/Cells/StartCell/StartCell.cpp.o: \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../unq_p.h \
  ../Classes/Cells/StartCell/StartCell.cpp \
@@ -83,6 +87,7 @@ CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.o: \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../unq_p.h \
  ../Classes/Field/Field.cpp \
@@ -100,6 +105,7 @@ CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o: \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../Classes/СellСontents/Сreatures/Player/Player.h \
@@ -110,14 +116,22 @@ CMakeFiles/Console_Game.dir/Classes/GameObject/GameObject.cpp.o: \
  ../Classes/GameObject/GameObject.cpp \
  ../Classes/GameObject/GameObject.h
 CMakeFiles/Console_Game.dir/Classes/Logging/Logger/Logger.cpp.o: \
+ ../Classes/BuilderField/BuilderField.h \
  ../Classes/Cells/ICell.h \
  ../Classes/Event/Event.h \
  ../Classes/Field/Field.h \
+ ../Classes/Game/Game.h \
  ../Classes/GameObject/GameObject.h \
+ ../Classes/Logging/Logs/ConsoleLog/ConsoleLog.h \
+ ../Classes/Logging/Logs/FileLog/FileLog.h \
  ../Classes/Logging/Logs/ILog.h \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
+ ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
+ ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
+ ../Classes/СellСontents/Сreatures/Player/Player.h \
  ../unq_p.h \
  ../Classes/Logging/Logger/Logger.cpp \
  ../Classes/Logging/Logger/Logger.h
@@ -151,6 +165,7 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewCell/ViewCell.cpp.o: \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.h \
  ../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
@@ -180,6 +195,7 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.o: \
  ../Classes/View/ViewField/ViewField.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../Classes/СellСontents/Сreatures/Player/Player.h \
@@ -199,6 +215,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/Croissant/Croissant.cpp
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../unq_p.h \
  ../Classes/СellСontents/Items/Croissant/Croissant.cpp \
@@ -212,6 +229,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/IItem.cpp.o: \
  ../Classes/Logging/Logs/ILog.h \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../unq_p.h \
  ../Classes/СellСontents/Items/IItem.cpp \
@@ -226,6 +244,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/Shield/Shield.cpp.o: \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../unq_p.h \
  ../Classes/СellСontents/Items/Shield/Shield.cpp \
@@ -240,6 +259,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/Sword/Sword.cpp.o: \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../unq_p.h \
  ../Classes/СellСontents/Items/Sword/Sword.cpp \
@@ -254,6 +274,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Enemies/CleverAlie
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../Classes/СellСontents/Сreatures/Player/Player.h \
  ../unq_p.h \
@@ -269,6 +290,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Enemies/Horizontal
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../Classes/СellСontents/Сreatures/Player/Player.h \
  ../unq_p.h \
@@ -283,6 +305,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Enemies/VerticalSc
  ../Classes/Logging/Logs/ILog.h \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../unq_p.h \
  ../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.cpp \
@@ -296,6 +319,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/ICreature.cpp.o: \
  ../Classes/Logging/Logs/ILog.h \
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../unq_p.h \
  ../Classes/СellСontents/Сreatures/ICreature.cpp \
  ../Classes/СellСontents/Сreatures/ICreature.h
@@ -309,6 +333,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Player/Player.cpp.
  ../Classes/Logging/Observable/Observable.h \
  ../Classes/СellСontents/IAutonomy.h \
  ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../unq_p.h \
  ../Classes/СellСontents/Сreatures/Player/Player.cpp \
@@ -328,13 +353,9 @@ CMakeFiles/Console_Game.dir/main.cpp.o: \
  ../Classes/View/ViewField/ViewField.h \
  ../Classes/View/ViewGame/ViewGame.h \
  ../Classes/СellСontents/IAutonomy.h \
- ../Classes/СellСontents/Items/Croissant/Croissant.h \
  ../Classes/СellСontents/Items/IItem.h \
- ../Classes/СellСontents/Items/Shield/Shield.h \
- ../Classes/СellСontents/Items/Sword/Sword.h \
+ ../Classes/СellСontents/LocatedObject.h \
  ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h \
- ../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.h \
- ../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.h \
  ../Classes/СellСontents/Сreatures/ICreature.h \
  ../Classes/СellСontents/Сreatures/Player/Player.h \
  ../unq_p.h \

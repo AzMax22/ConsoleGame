@@ -99,7 +99,7 @@ void ICreature::death() {
     notify<EventDeath>(event);
 }
 
-ICreature::ICreature() : GameObject() {
+ICreature::ICreature() : LocatedObject() {
 
 }
 
