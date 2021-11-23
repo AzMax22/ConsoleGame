@@ -46,6 +46,7 @@
 				<Compiler>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/BuilderField"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/LogAdapterEN"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/FileLog"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs"/>
@@ -102,6 +103,7 @@
 				<Compiler>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/BuilderField"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/LogAdapterEN"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/FileLog"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs"/>
@@ -181,6 +183,15 @@
 			<Option target="Console_Game"/>
 		</Unit>
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Console/Console.h">
+			<Option target="Console_Game"/>
+		</Unit>
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.cpp">
+			<Option target="Console_Game"/>
+		</Unit>
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.h">
+			<Option target="Console_Game"/>
+		</Unit>
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/SetKeys.h">
 			<Option target="Console_Game"/>
 		</Unit>
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Event/Event.cpp">

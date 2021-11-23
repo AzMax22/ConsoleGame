@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/NormalCell/NormalCell.cpp" "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/Console_Game.dir/Classes/Cells/NormalCell/NormalCell.cpp.o"
   "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Cells/StartCell/StartCell.cpp" "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/Console_Game.dir/Classes/Cells/StartCell/StartCell.cpp.o"
   "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Console/Console.cpp" "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/Console_Game.dir/Classes/Console/Console.cpp.o"
+  "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.cpp" "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o"
   "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Event/Event.cpp" "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/Console_Game.dir/Classes/Event/Event.cpp.o"
   "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field/Field.cpp" "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.o"
   "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.cpp" "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o"
@@ -43,6 +44,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Classes/Field"
   "../Classes/BuilderField"
+  "../Classes/Controler"
   "../Classes/Logging/LogAdapterEN"
   "../Classes/Logging/Logs/FileLog"
   "../Classes/Logging/Logs"

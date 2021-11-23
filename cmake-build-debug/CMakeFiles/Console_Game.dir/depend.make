@@ -72,6 +72,28 @@ CMakeFiles/Console_Game.dir/Classes/Cells/StartCell/StartCell.cpp.o: \
 CMakeFiles/Console_Game.dir/Classes/Console/Console.cpp.o: \
  ../Classes/Console/Console.cpp \
  ../Classes/Console/Console.h
+CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o: \
+ ../Classes/BuilderField/BuilderField.h \
+ ../Classes/Cells/ICell.h \
+ ../Classes/Event/Event.h \
+ ../Classes/Field/Field.h \
+ ../Classes/Game/Game.h \
+ ../Classes/GameObject/GameObject.h \
+ ../Classes/Logging/Logger/Logger.h \
+ ../Classes/Logging/Logs/ConsoleLog/ConsoleLog.h \
+ ../Classes/Logging/Logs/FileLog/FileLog.h \
+ ../Classes/Logging/Logs/ILog.h \
+ ../Classes/Logging/Observable/Observable.h \
+ ../Classes/СellСontents/IAutonomy.h \
+ ../Classes/СellСontents/Items/IItem.h \
+ ../Classes/СellСontents/LocatedObject.h \
+ ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h \
+ ../Classes/СellСontents/Сreatures/ICreature.h \
+ ../Classes/СellСontents/Сreatures/Player/Player.h \
+ ../unq_p.h \
+ ../Classes/Controler/Controler.cpp \
+ ../Classes/Controler/Controler.h \
+ ../Classes/Controler/SetKeys.h
 CMakeFiles/Console_Game.dir/Classes/Event/Event.cpp.o: \
  ../Classes/GameObject/GameObject.h \
  ../Classes/Event/Event.cpp \
@@ -341,6 +363,7 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Player/Player.cpp.
 CMakeFiles/Console_Game.dir/main.cpp.o: \
  ../Classes/BuilderField/BuilderField.h \
  ../Classes/Cells/ICell.h \
+ ../Classes/Controler/Controler.h \
  ../Classes/Event/Event.h \
  ../Classes/Field/Field.h \
  ../Classes/Game/Game.h \

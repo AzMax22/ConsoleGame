@@ -18,6 +18,10 @@ Player.h
 unq_p.h
 ../Classes/Cells/unq_p.h
 
+../Classes/Controler/Controler.h
+Game.h
+../Classes/Controler/Game.h
+
 ../Classes/Event/Event.h
 GameObject.h
 ../Classes/Event/GameObject.h
@@ -29,6 +33,24 @@ memory
 -
 unq_p.h
 ../Classes/Field/unq_p.h
+
+../Classes/Game/Game.h
+BuilderField.h
+../Classes/Game/BuilderField.h
+Field.h
+../Classes/Game/Field.h
+unq_p.h
+../Classes/Game/unq_p.h
+CleverAlien.h
+../Classes/Game/CleverAlien.h
+Logger.h
+../Classes/Game/Logger.h
+FileLog.h
+../Classes/Game/FileLog.h
+ConsoleLog.h
+../Classes/Game/ConsoleLog.h
+Event.h
+../Classes/Game/Event.h
 
 ../Classes/GameObject/GameObject.h
 string
@@ -74,6 +96,18 @@ string
 Logger.h
 ../Classes/Logging/Observable/Logger.h
 
+../Classes/View/ViewField/ViewField.h
+unq_p.h
+../Classes/View/ViewField/unq_p.h
+Field.h
+../Classes/View/ViewField/Field.h
+
+../Classes/View/ViewGame/ViewGame.h
+Game.h
+../Classes/View/ViewGame/Game.h
+ViewField.h
+../Classes/View/ViewGame/ViewField.h
+
 ../Classes/СellСontents/IAutonomy.h
 
 ../Classes/СellСontents/Items/IItem.h
@@ -116,25 +150,33 @@ GameObject.h
 memory
 -
 
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.cpp
-Game.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.cpp
+Controler.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.h
+iostream
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/iostream
+SetKeys.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/SetKeys.h
+ncurses.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/ncurses.h
 
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.h
-BuilderField.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/BuilderField.h
-Field.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Field.h
-unq_p.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/unq_p.h
-CleverAlien.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/CleverAlien.h
-Logger.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Logger.h
-FileLog.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/FileLog.h
-ConsoleLog.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/ConsoleLog.h
-Event.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Event.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.h
+Game.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Game.h
+
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/SetKeys.h
+string
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/string
+
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/main.cpp
+iostream
+-
+ViewGame.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/ViewGame.h
+Game.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Game.h
+Controler.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Controler.h
+ncurses.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/ncurses.h
 

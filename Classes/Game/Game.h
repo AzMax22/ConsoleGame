@@ -17,7 +17,7 @@ enum StateGame{
 };
 
 class Game : public GameObject{
-    unq_p<Field> m_field1;
+    unq_p<Field> m_field;
     unq_p<Player> m_player ;
     unq_p<CleverAlien> m_alien;
     unq_p<Logger> m_logger;
@@ -31,6 +31,7 @@ public:
 
     Field* getField();
     Logger* getLogger();
+    void movePlayer(int inc_x, int inc_y);
 
     std::string name() override;
 

@@ -2,9 +2,6 @@
 
 
 Game::Game() {
-    //локализация для юникода
-    std::locale::global(std::locale("en_US.utf8"));
-
     //инициализация объектов
     BuilderField builder;
     m_alien = std::make_unique<CleverAlien>();
@@ -22,7 +19,7 @@ Game::Game() {
     m_player = builder.buildStartCell(8, 1);
     builder.buildEndCell();
     builder.buildEndCell();
-    m_field1 = builder.getField();
+    m_field = builder.getField();
 
     //инициализация логерра
     auto cons_log = std::make_unique<ConsoleLog>();
@@ -41,7 +38,7 @@ Game::Game() {
     logger.addObservable(shield.get());*/
 
     m_alien->follow(m_player.get());
-    m_alien->setLocation(10, 5, m_field1.get());
+    m_alien->setLocation(20, 20, m_field.get());
     /*skelet->setLocation(15, 1, field1.get());
     scorpion->setLocation(5, 5, field1.get());
     sword->setLocation(1, 1, std::move(sword), field1.get());
@@ -75,12 +72,11 @@ void Game::update() {
 }
 
 Game::~Game() {
-    //сбрасываем локаль , иначе будет утечка памяти
-    std::locale::global(std::locale("C"));
+
 }
 
 Field *Game::getField() {
-    return m_field1.get();
+    return m_field.get();
 }
 
 StateGame Game::gameState() {
@@ -94,3 +90,8 @@ Logger *Game::getLogger() {
 std::string Game::name() {
     return "Игра ";
 }
+
+void Game::movePlayer(int inc_x, int inc_y) {
+    m_player->move(inc_x,inc_y);
+}
+

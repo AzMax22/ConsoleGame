@@ -24,6 +24,8 @@ class Player : public ICreature{
 public:
     Player();
 
+    void move(int inc_x,int inc_y);
+
     void increaseMaxHealth (int inc_max_health);  //увеличить максимальное кол-во XP
     void decreaseMaxHealth (int dec_max_health);  //уменьшить максимальное кол-во XP
 

@@ -57,6 +57,23 @@ std::string Player::name() {
     return "Игрок ";
 }
 
+void Player::move(int inc_x, int inc_y) {
+    ICell& next_cell = m_field->getCell(m_x + inc_x, m_y + inc_y);
+
+    if (next_cell.getPassable() == false) {  //проверка на проходимость след клетки
+        return;
+    }
+
+    if (next_cell.topCreature()) {  //проверка есть ли существо на след клетке
+        return;
+    }
+
+    ICreature* myself = m_field->getCell(m_x, m_y).popCreature();
+    m_x = m_x + inc_x;
+    m_y = m_y + inc_y;
+    m_field->getCell(m_x, m_y ).putCreature(myself);
+}
+
 
 
 

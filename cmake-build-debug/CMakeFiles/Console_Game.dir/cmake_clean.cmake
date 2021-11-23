@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Console_Game.dir/Classes/Cells/NormalCell/NormalCell.cpp.o"
   "CMakeFiles/Console_Game.dir/Classes/Cells/StartCell/StartCell.cpp.o"
   "CMakeFiles/Console_Game.dir/Classes/Console/Console.cpp.o"
+  "CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o"
   "CMakeFiles/Console_Game.dir/Classes/Event/Event.cpp.o"
   "CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.o"
   "CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o"

@@ -3,6 +3,8 @@ project(Console_Game)
 
 set(CMAKE_CXX_STANDARD 23)
 
+find_package(Curses REQUIRED)
+include_directories(${CURSES_INCLUDE_DIR})
 
 add_executable(Console_Game main.cpp
         Classes/Field/Field.cpp
@@ -38,13 +40,16 @@ add_executable(Console_Game main.cpp
         Classes/Event/Event.h Classes/Event/Event.cpp Classes/Logging/Logs/ConsoleLog/ConsoleLog.cpp
         Classes/Logging/Logs/ConsoleLog/ConsoleLog.h Classes/Logging/Logs/ILog.cpp
         Classes/Game/Game.cpp Classes/Game/Game.h
-        Classes/View/ViewGame/ViewGame.cpp Classes/View/ViewGame/ViewGame.h Classes/СellСontents/LocatedObject.h)
+        Classes/View/ViewGame/ViewGame.cpp Classes/View/ViewGame/ViewGame.h
+        Classes/СellСontents/LocatedObject.h Classes/Controler/Controler.cpp
+        Classes/Controler/Controler.h Classes/Controler/SetKeys.h)
 
 target_include_directories(
         Console_Game                           # Цель, при сборке которой учитываются указанные пути к заголовочным файлам
         PUBLIC                                # область видимости (PRIVATE, INTERFACE или PUBLIC)
         Classes/Field/
         Classes/BuilderField/
+        Classes/Controler/
         Classes/Logging/LogAdapterEN/
         Classes/Logging/Logs/FileLog/
         Classes/Logging/Logs
@@ -79,3 +84,5 @@ target_include_directories(
         Classes/Events/IEvent/
         Classes/Logging/IGeneratorLogMes/GeneratorLogMesRU/
 )
+
+target_link_libraries(Console_Game ${CURSES_LIBRARIES})

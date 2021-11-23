@@ -92,7 +92,8 @@ void ViewCell::draw() {
             }
 
             case TPlayer: {
-                std::wcout << L"😎";
+                g_console.setTextAttrib(F_BLUE);
+                std::wcout << L"\uE4AF ";
 
                 break;
             }

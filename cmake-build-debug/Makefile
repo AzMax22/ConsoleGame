@@ -249,6 +249,30 @@ Classes/Console/Console.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Console/Console.cpp.s
 .PHONY : Classes/Console/Console.cpp.s
 
+Classes/Controler/Controler.o: Classes/Controler/Controler.cpp.o
+.PHONY : Classes/Controler/Controler.o
+
+# target to build an object file
+Classes/Controler/Controler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o
+.PHONY : Classes/Controler/Controler.cpp.o
+
+Classes/Controler/Controler.i: Classes/Controler/Controler.cpp.i
+.PHONY : Classes/Controler/Controler.i
+
+# target to preprocess a source file
+Classes/Controler/Controler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.i
+.PHONY : Classes/Controler/Controler.cpp.i
+
+Classes/Controler/Controler.s: Classes/Controler/Controler.cpp.s
+.PHONY : Classes/Controler/Controler.s
+
+# target to generate assembly for a file
+Classes/Controler/Controler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.s
+.PHONY : Classes/Controler/Controler.cpp.s
+
 Classes/Event/Event.o: Classes/Event/Event.cpp.o
 .PHONY : Classes/Event/Event.o
 
@@ -825,6 +849,9 @@ help:
 	@echo "... Classes/Console/Console.o"
 	@echo "... Classes/Console/Console.i"
 	@echo "... Classes/Console/Console.s"
+	@echo "... Classes/Controler/Controler.o"
+	@echo "... Classes/Controler/Controler.i"
+	@echo "... Classes/Controler/Controler.s"
 	@echo "... Classes/Event/Event.o"
 	@echo "... Classes/Event/Event.i"
 	@echo "... Classes/Event/Event.s"
