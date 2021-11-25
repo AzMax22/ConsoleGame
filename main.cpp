@@ -3,16 +3,11 @@
 #include "ViewGame.h"
 #include "Game.h"
 #include "Controler.h"
-#include "ncurses.h"
 
 int main() {
     //локализация для юникода
     std::locale::global(std::locale("en_US.utf8"));
 
-    //инициализация билиотеки ncures.h и задание нужного режима консоли
-    initscr();
-    noecho();
-    keypad(stdscr, TRUE);
 
     //отображение
     Game game;
@@ -32,8 +27,7 @@ int main() {
 
     }
 
-    //освобождение ресурсов ncurses
-    endwin();
+
     //сбрасываем локаль , иначе будет утечка памяти
     std::locale::global(std::locale("C"));
     return 0;

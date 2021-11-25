@@ -14,18 +14,7 @@ Controler::Controler(Game &game) : m_game(game){
 
 void Controler::update() {
 
-
-    int ch = getch();
-
-    if (ch == KEY_LEFT) {
-        m_game.movePlayer(-1, 0);
-    };
-
-
-
-
-
-   /* wchar_t a;
+    wchar_t a;
     a = std::wcin.get();
 
     if (SetKeys::keyLeft.find(a) != std::string::npos){
@@ -39,7 +28,7 @@ void Controler::update() {
     }
     if (SetKeys::keyDown.find(a) != std::string::npos){
         m_game.movePlayer(0, 1);
-    }*/
+    }
 
 }
 

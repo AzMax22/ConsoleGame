@@ -18,10 +18,6 @@ Player.h
 unq_p.h
 ../Classes/Cells/unq_p.h
 
-../Classes/Controler/Controler.h
-Game.h
-../Classes/Controler/Game.h
-
 ../Classes/Event/Event.h
 GameObject.h
 ../Classes/Event/GameObject.h
@@ -96,18 +92,6 @@ string
 Logger.h
 ../Classes/Logging/Observable/Logger.h
 
-../Classes/View/ViewField/ViewField.h
-unq_p.h
-../Classes/View/ViewField/unq_p.h
-Field.h
-../Classes/View/ViewField/Field.h
-
-../Classes/View/ViewGame/ViewGame.h
-Game.h
-../Classes/View/ViewGame/Game.h
-ViewField.h
-../Classes/View/ViewGame/ViewField.h
-
 ../Classes/СellСontents/IAutonomy.h
 
 ../Classes/СellСontents/Items/IItem.h
@@ -167,16 +151,4 @@ Game.h
 /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/SetKeys.h
 string
 /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/string
-
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/main.cpp
-iostream
--
-ViewGame.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/ViewGame.h
-Game.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Game.h
-Controler.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Controler.h
-ncurses.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/ncurses.h
 

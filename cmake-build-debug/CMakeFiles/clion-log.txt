@@ -1,5 +1,4 @@
 /snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame"
--- Found Curses: /usr/lib/x86_64-linux-gnu/libcurses.so  
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug

@@ -3,8 +3,6 @@ project(Console_Game)
 
 set(CMAKE_CXX_STANDARD 23)
 
-find_package(Curses REQUIRED)
-include_directories(${CURSES_INCLUDE_DIR})
 
 add_executable(Console_Game main.cpp
         Classes/Field/Field.cpp
@@ -85,4 +83,3 @@ target_include_directories(
         Classes/Logging/IGeneratorLogMes/GeneratorLogMesRU/
 )
 
-target_link_libraries(Console_Game ${CURSES_LIBRARIES})

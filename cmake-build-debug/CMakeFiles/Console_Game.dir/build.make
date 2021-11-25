@@ -508,8 +508,6 @@ Console_Game: CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o
 Console_Game: CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.o
 Console_Game: CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o
 Console_Game: CMakeFiles/Console_Game.dir/build.make
-Console_Game: /usr/lib/x86_64-linux-gnu/libcurses.so
-Console_Game: /usr/lib/x86_64-linux-gnu/libform.so
 Console_Game: CMakeFiles/Console_Game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable Console_Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Console_Game.dir/link.txt --verbose=$(VERBOSE)
