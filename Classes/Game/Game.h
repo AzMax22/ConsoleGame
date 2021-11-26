@@ -14,16 +14,16 @@
 
 
 
-template<class GenLevel>
+template<class GenLevel, class RSetLocatedObj>
 class Game : public GameObject{
     unq_p<Field> m_field;
-    unq_p<Player> m_player ;
-    unq_p<CleverAlien> m_alien;
+    std::vector<unq_p<IAutonomy>> m_set_update_obj;
     unq_p<Logger> m_logger;
+    unq_p<Player> m_player;
     StateGame state_game = RUN;
 
 public:
-    Game(GenLevel& genlevel);
+    Game(GenLevel& genlevel, RSetLocatedObj& r_set_located);
 
     void update();
     StateGame gameState();

@@ -74,6 +74,7 @@
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Croissant"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Shield"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Sword"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logger"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/IGeneratorLogMes"/>
@@ -132,6 +133,7 @@
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Croissant"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Shield"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/Items/Sword"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logger"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/IGeneratorLogMes"/>
@@ -215,6 +217,9 @@
 			<Option target="Console_Game"/>
 		</Unit>
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Rule/GenerationLevel.h">
+			<Option target="Console_Game"/>
+		</Unit>
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Rule/RuleSetLocatedGameObj.h">
 			<Option target="Console_Game"/>
 		</Unit>
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/StateGame.h">

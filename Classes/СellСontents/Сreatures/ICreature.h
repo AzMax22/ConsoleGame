@@ -3,7 +3,6 @@
 
 #include "unq_p.h"
 #include "IAutonomy.h"
-#include "Observable.h"
 #include "LocatedObject.h"
 #include "Field.h"
 
@@ -16,7 +15,7 @@ enum TypeCreature {
 
 
 //интерфейс для обектов которые могут стоять на (содержатся в) Cell
-class ICreature : public IAutonomy, public Observable, public LocatedObject{
+class ICreature : public IAutonomy, public LocatedObject{
 protected:
     int m_max_health ;
     int m_health ;

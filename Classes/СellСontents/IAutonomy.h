@@ -1,8 +1,10 @@
 #ifndef CONSOLE_GAME_IAUTONOMY_H
 #define CONSOLE_GAME_IAUTONOMY_H
 
+#include "Observable.h"
+
 //интерфейс классов котрые имею "автономное поведение" , независимое от игрока(человека)
-class IAutonomy {
+class IAutonomy : public Observable {
 protected:
     bool m_alive = true;
 public:

@@ -15,7 +15,9 @@ void ICreature::increaseHealth(int inc_health) {
 
 void ICreature::decreaseHealth(int dec_health) {
     int real_dec_health = dec_health - m_armor; //учет защиты
-    if (real_dec_health <= 0) {return;}
+    if (real_dec_health < 0) {
+        real_dec_health = 0;
+    }
 
     m_health -= real_dec_health;
     if (m_health <= 0){

@@ -77,6 +77,10 @@ void Player::move(int inc_x, int inc_y) {
     m_y = m_y + inc_y;
     m_field->getCell(m_x, m_y ).putCreature(myself);
 
+    if (next_cell.topItem()) {  //проверка есть предмет
+        next_cell.popItem()->affect(this);
+    }
+
     EventMove event(this, inc_x , inc_y);
     notify<EventMove>(event);
 }

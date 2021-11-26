@@ -74,12 +74,16 @@ void Logger::processNotification(EventChangeHealth &event) {
             some_log->steam() << event.getObjEvent() << "восстановил здоровье на " << event.getIncHealth() << " ед." \
             << ", текущее здоровье " << obj.getHealth() << "/" << obj.getMaxHealth() << std::endl;
         }
-    } else
-        for(auto&& some_log : logs) {
+    } else {
+        int real_damage = -event.getIncHealth() - obj.getArmor();
+        if (real_damage < 0) { real_damage = 0; }
+
+        for (auto &&some_log: logs) {
             some_log->steam() << event.getObjEvent() << "получил урон в " << -event.getIncHealth() << " ед." \
-            << ", c учетом защиты в " << obj.getArmor() << " ед."  << ", реальный урон " << -event.getIncHealth() - obj.getArmor() \
-            << " ед." <<", текущее здоровье " << obj.getHealth() << "/" << obj.getMaxHealth() << std::endl;
+            << ", c учетом защиты в " << obj.getArmor() << " ед." << ", реальный урон " << real_damage \
+            << " ед." << ", текущее здоровье " << obj.getHealth() << "/" << obj.getMaxHealth() << std::endl;
         }
+    }
 }
 
 void Logger::processNotification(EventChangeArmor &event) {
@@ -138,7 +142,7 @@ void Logger::processNotification(EventDeath &event) {
 
 void Logger::processNotification(EventAffect &event) {
     for(auto&& some_log : logs) {
-        some_log->steam() << event.getObjEvent() << "воздействоет на " << event.getAnotherObj() << std::endl;
+        some_log->steam() <<  event.getAnotherObj() << "подобрал " <<event.getObjEvent()  << std::endl;
     }
 }
 

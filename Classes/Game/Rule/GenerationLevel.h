@@ -35,7 +35,7 @@ public:
         builder.buildWall(21,14,30,14);
         builder.buildWall(21,14,21,17);
 
-        builder.buildEndCell(20, 20);
+        builder.buildEndCell(30, 20);
         return builder.getField();
     }
 };

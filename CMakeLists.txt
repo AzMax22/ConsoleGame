@@ -41,7 +41,7 @@ add_executable(Console_Game main.cpp
         Classes/View/ViewGame/ViewGame.inl Classes/View/ViewGame/ViewGame.h
         Classes/СellСontents/LocatedObject.h Classes/Controler/Controler.inl
         Classes/Controler/Controler.h Classes/Controler/SetKeys.h
-        Classes/Game/Rule/GenerationLevel.h Classes/Game/StateGame.h)
+        Classes/Game/Rule/GenerationLevel.h Classes/Game/StateGame.h Classes/Game/Rule/RuleSetLocatedGameObj.h)
 
 target_include_directories(
         Console_Game                           # Цель, при сборке которой учитываются указанные пути к заголовочным файлам
@@ -77,6 +77,7 @@ target_include_directories(
         Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/
         Classes/СellСontents/Items/Croissant/
         Classes/СellСontents/Items/Shield/
+        Classes/СellСontents/Items/Sword/
         Classes/Logging/
         Classes/Logging/Logger/
         Classes/Logging/IGeneratorLogMes/

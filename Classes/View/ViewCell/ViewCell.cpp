@@ -24,7 +24,8 @@ void ViewCell::draw() {
             std::wcout << "\x1b[42m  ";
             break;
         case TImpassableCell:
-            std::wcout << "\x1b[47m  ";
+            g_console.setTextAttrib(B_CYAN);
+            std::wcout << "  ";
             break;
     }
 
@@ -92,8 +93,8 @@ void ViewCell::draw() {
             }
 
             case TPlayer: {
-                g_console.setTextAttrib(F_BLUE);
-                std::wcout << L"\uE4AF ";
+                g_console.setTextAttrib(F_WHITE);
+                std::wcout << L"⮟ "; //
 
                 break;
             }

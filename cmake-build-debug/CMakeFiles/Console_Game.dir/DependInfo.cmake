@@ -69,6 +69,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion"
   "../Classes/СellСontents/Items/Croissant"
   "../Classes/СellСontents/Items/Shield"
+  "../Classes/СellСontents/Items/Sword"
   "../Classes/Logging"
   "../Classes/Logging/Logger"
   "../Classes/Logging/IGeneratorLogMes"

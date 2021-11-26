@@ -74,6 +74,30 @@ Game.inl
 BuilderField.h
 ../Classes/Game/Rule/BuilderField.h
 
+../Classes/Game/Rule/RuleSetLocatedGameObj.h
+IAutonomy.h
+../Classes/Game/Rule/IAutonomy.h
+vector
+-
+unq_p.h
+../Classes/Game/Rule/unq_p.h
+Player.h
+../Classes/Game/Rule/Player.h
+Logger.h
+../Classes/Game/Rule/Logger.h
+VerticalScorpion.h
+../Classes/Game/Rule/VerticalScorpion.h
+HorizontalSkeleton.h
+../Classes/Game/Rule/HorizontalSkeleton.h
+CleverAlien.h
+../Classes/Game/Rule/CleverAlien.h
+Sword.h
+../Classes/Game/Rule/Sword.h
+Croissant.h
+../Classes/Game/Rule/Croissant.h
+Shield.h
+../Classes/Game/Rule/Shield.h
+
 ../Classes/Game/StateGame.h
 
 ../Classes/GameObject/GameObject.h
@@ -139,6 +163,26 @@ ViewGame.inl
 ../Classes/View/ViewGame/ViewGame.inl
 
 ../Classes/СellСontents/IAutonomy.h
+Observable.h
+../Classes/СellСontents/Observable.h
+
+../Classes/СellСontents/Items/Croissant/Croissant.h
+IItem.h
+../Classes/СellСontents/Items/Croissant/IItem.h
+
+../Classes/СellСontents/Items/IItem.h
+unq_p.h
+../Classes/СellСontents/Items/unq_p.h
+ICreature.h
+../Classes/СellСontents/Items/ICreature.h
+
+../Classes/СellСontents/Items/Shield/Shield.h
+IItem.h
+../Classes/СellСontents/Items/Shield/IItem.h
+
+../Classes/СellСontents/Items/Sword/Sword.h
+IItem.h
+../Classes/СellСontents/Items/Sword/IItem.h
 
 ../Classes/СellСontents/LocatedObject.h
 GameObject.h
@@ -150,13 +194,27 @@ ICreature.h
 Player.h
 ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/Player.h
 
+../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.h
+ICreature.h
+../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/ICreature.h
+unq_p.h
+../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/unq_p.h
+GameObject.h
+../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/GameObject.h
+Observable.h
+../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/Observable.h
+
+../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.h
+ICreature.h
+../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/ICreature.h
+GameObject.h
+../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/GameObject.h
+
 ../Classes/СellСontents/Сreatures/ICreature.h
 unq_p.h
 ../Classes/СellСontents/Сreatures/unq_p.h
 IAutonomy.h
 ../Classes/СellСontents/Сreatures/IAutonomy.h
-Observable.h
-../Classes/СellСontents/Сreatures/Observable.h
 LocatedObject.h
 ../Classes/СellСontents/Сreatures/LocatedObject.h
 Field.h
@@ -181,4 +239,6 @@ Controler.h
 /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Controler.h
 GenerationLevel.h
 /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/GenerationLevel.h
+RuleSetLocatedGameObj.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/RuleSetLocatedGameObj.h
 

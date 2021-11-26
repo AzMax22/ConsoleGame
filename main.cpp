@@ -4,19 +4,23 @@
 #include "Game.h"
 #include "Controler.h"
 #include "GenerationLevel.h"
+#include "RuleSetLocatedGameObj.h"
 
 int main() {
     //локализация для юникода
     std::locale::global(std::locale("en_US.utf8"));
 
-    using GenLevel = GenerationLevel<1>;
+    const int level = 0;
+
+    using GenLevel = GenerationLevel<level>;
     GenLevel gen_level;
 
+    using RSetLocatedObj = RuleSetLocatedGameObj<level, 1>;
+    RSetLocatedObj r_set_located;
 
+    using NewGame = Game<GenLevel, RSetLocatedObj>;
 
-    using NewGame = Game<GenLevel>;
-
-    NewGame game(gen_level);
+    NewGame game(gen_level, r_set_located);
     ViewGame  view(game);
     Controler controler(game);
 

@@ -1,10 +1,10 @@
 
 
-template<class GenLevel>
-Game<GenLevel>::Game(GenLevel& genlevel) {
+template<class GenLevel, class RSetLocatedObj>
+Game<GenLevel, RSetLocatedObj>::Game(GenLevel& genlevel, RSetLocatedObj& r_set_located) {
     //инициализация объектов
     BuilderField builder;
-    m_alien = std::make_unique<CleverAlien>();
+
 
     /*auto curos = std::make_unique<Croissant>();
     auto sword = std::make_unique<Sword>();
@@ -13,7 +13,7 @@ Game<GenLevel>::Game(GenLevel& genlevel) {
     auto skelet2 = std::make_unique<HorizontalSkeleton>();
     auto scorpion = std::make_unique<VerticalScorpion>();*/
 
-    m_player = std::make_unique<Player>(); //создание игрока
+    //m_player = std::make_unique<Player>(); //создание игрока
 
 
     //строительство поля
@@ -23,7 +23,7 @@ Game<GenLevel>::Game(GenLevel& genlevel) {
 
     builder.buildEndCell(30, 20);
     m_field = builder.getField();*/
-    m_field = genlevel.generationField();
+
 
     //инициализация логерра
     auto cons_log = std::make_unique<ConsoleLog>();
@@ -31,8 +31,14 @@ Game<GenLevel>::Game(GenLevel& genlevel) {
     m_logger = std::make_unique<Logger>(std::move(f_log));
     m_logger->addLog(std::move(cons_log));
 
-    m_logger->addObservable(m_alien.get());
-    m_logger->addObservable(m_player.get());
+    m_field = genlevel.generationField();
+    m_player= r_set_located.getPlayer(m_field.get(), m_logger.get());
+    m_set_update_obj = r_set_located.getSetEnemy(m_field.get(), m_logger.get(), m_player.get());
+    r_set_located.setItem(m_field.get(), m_logger.get());
+
+    //m_logger->addObservable(m_set_update_obj[0].get());
+   // m_logger->addObservable(m_alien.get());
+    //m_logger->addObservable(m_player.get());
     /*logger.addObservable(skelet.get());
     logger.addObservable(skelet2.get());
     logger.addObservable(scorpion.get());
@@ -41,9 +47,9 @@ Game<GenLevel>::Game(GenLevel& genlevel) {
     logger.addObservable(curos.get());
     logger.addObservable(shield.get());*/
 
-    m_alien->follow(m_player.get());
-    m_player->setLocation(1, 2, m_field.get());
-    m_alien->setLocation(20, 1, m_field.get());
+    //m_alien->follow(m_player.get());
+    //m_player->setLocation(1, 2, m_field.get());
+    //m_alien->setLocation(20, 1, m_field.get());
     /*skelet->setLocation(15, 1, field1.get());
     scorpion->setLocation(5, 5, field1.get());
     sword->setLocation(1, 1, std::move(sword), field1.get());
@@ -53,9 +59,9 @@ Game<GenLevel>::Game(GenLevel& genlevel) {
 
 }
 
-template<class GenLevel>
-void Game<GenLevel>::update() {
-    if (m_player->getAlive()){
+template<class GenLevel, class RSetLocatedObj>
+void Game<GenLevel, RSetLocatedObj>::update() {
+    /*if (m_player->getAlive()){
         if(m_player->win()){
             state_game = WIN;
 
@@ -74,36 +80,43 @@ void Game<GenLevel>::update() {
 
     if (m_alien->getAlive()){
         m_alien->update();
+    }*/
+
+    m_player->update();
+
+    for (int i = 0 ; i < m_set_update_obj.size(); i++ ){
+        m_set_update_obj[i]->update();
     }
 }
 
-template<class GenLevel>
-Game<GenLevel>::~Game() {
+
+template<class GenLevel, class RSetLocatedObj>
+Game<GenLevel, RSetLocatedObj>::~Game() {
 
 }
 
-template<class GenLevel>
-Field *Game<GenLevel>::getField() {
+template<class GenLevel, class RSetLocatedObj>
+Field *Game<GenLevel, RSetLocatedObj>::getField() {
     return m_field.get();
 }
 
-template<class GenLevel>
-StateGame Game<GenLevel>::gameState() {
+template<class GenLevel, class RSetLocatedObj>
+StateGame Game<GenLevel, RSetLocatedObj>::gameState() {
     return state_game;
 }
 
-template<class GenLevel>
-Logger *Game<GenLevel>::getLogger() {
+template<class GenLevel, class RSetLocatedObj>
+Logger *Game<GenLevel, RSetLocatedObj>::getLogger() {
     return m_logger.get();
 }
 
-template<class GenLevel>
-std::string Game<GenLevel>::name() {
+template<class GenLevel, class RSetLocatedObj>
+std::string Game<GenLevel, RSetLocatedObj>::name() {
     return "Игра ";
 }
 
-template<class GenLevel>
-void Game<GenLevel>::movePlayer(int inc_x, int inc_y) {
+template<class GenLevel, class RSetLocatedObj>
+void Game<GenLevel, RSetLocatedObj>::movePlayer(int inc_x, int inc_y) {
     m_player->move(inc_x,inc_y);
 }
 

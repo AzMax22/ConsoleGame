@@ -28,6 +28,7 @@ void Controler<TGame>::update() {
 
     a = std::wcin.get();
 
+
 }
 
 template<class TGame>

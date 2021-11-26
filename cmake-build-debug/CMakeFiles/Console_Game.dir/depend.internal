@@ -162,6 +162,13 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewField/ViewField.cpp.o
  /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewField/ViewField.cpp
  /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewField/ViewField.h
 CMakeFiles/Console_Game.dir/Classes/СellСontents/IAutonomy.cpp.o
+ ../Classes/Event/Event.h
+ ../Classes/Game/StateGame.h
+ ../Classes/GameObject/GameObject.h
+ ../Classes/Logging/Logger/Logger.h
+ ../Classes/Logging/Logs/ILog.h
+ ../Classes/Logging/Observable/Observable.h
+ ../unq_p.h
  /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/IAutonomy.cpp
  /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/IAutonomy.h
 CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/Croissant/Croissant.cpp.o
@@ -315,6 +322,7 @@ CMakeFiles/Console_Game.dir/main.cpp.o
  ../Classes/Game/Game.h
  ../Classes/Game/Game.inl
  ../Classes/Game/Rule/GenerationLevel.h
+ ../Classes/Game/Rule/RuleSetLocatedGameObj.h
  ../Classes/Game/StateGame.h
  ../Classes/GameObject/GameObject.h
  ../Classes/Logging/Logger/Logger.h
@@ -326,8 +334,14 @@ CMakeFiles/Console_Game.dir/main.cpp.o
  ../Classes/View/ViewGame/ViewGame.h
  ../Classes/View/ViewGame/ViewGame.inl
  ../Classes/СellСontents/IAutonomy.h
+ ../Classes/СellСontents/Items/Croissant/Croissant.h
+ ../Classes/СellСontents/Items/IItem.h
+ ../Classes/СellСontents/Items/Shield/Shield.h
+ ../Classes/СellСontents/Items/Sword/Sword.h
  ../Classes/СellСontents/LocatedObject.h
  ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h
+ ../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.h
+ ../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.h
  ../Classes/СellСontents/Сreatures/ICreature.h
  ../Classes/СellСontents/Сreatures/Player/Player.h
  ../unq_p.h
