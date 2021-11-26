@@ -16,7 +16,11 @@ class Field {
 
     //выделяет массив указазтелей для arr_cells
     arr2d_unq<ICell> _init_arr_cells(int width, int height);
+
+    bool _checkXY(int x, int y, TypeCell t_cell);
+    bool _checkNear(int x, int y, TypeCell t_cell);
 public:
+    void buildStartCell(int x, int y);
 
     //конструктор копирования
     Field(Field& other_field);

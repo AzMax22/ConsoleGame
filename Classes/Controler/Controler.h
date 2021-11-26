@@ -7,10 +7,11 @@
 
 #include "Game.h"
 
+template<class TGame>
 class Controler {
-    Game& m_game;
+    TGame& m_game;
 public:
-    Controler(Game& game);
+    Controler(TGame& game);
 
     //отрисовка
     void update();
@@ -18,5 +19,5 @@ public:
     ~Controler();
 };
 
-
+#include "Controler.inl"
 #endif //CONSOLE_GAME_CONTROLER_H

@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "Field.h"
+#include "IItem.h"
 
 Player::Player() : ICreature() {
     m_max_health = 50;
@@ -38,7 +39,10 @@ void Player::takeItem() {
 }
 
 void Player::setLocation(int x, int y, Field *field) {
+    field->buildStartCell(x,y);
     ICreature::setLocation(x, y, field);
+
+
 }
 
 int Player::getX() {
@@ -72,6 +76,9 @@ void Player::move(int inc_x, int inc_y) {
     m_x = m_x + inc_x;
     m_y = m_y + inc_y;
     m_field->getCell(m_x, m_y ).putCreature(myself);
+
+    EventMove event(this, inc_x , inc_y);
+    notify<EventMove>(event);
 }
 
 

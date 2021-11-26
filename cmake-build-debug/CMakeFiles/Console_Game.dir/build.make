@@ -404,45 +404,6 @@ CMakeFiles/Console_Game.dir/Classes/Logging/Logs/ILog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Console_Game.dir/Classes/Logging/Logs/ILog.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/ILog.cpp" -o CMakeFiles/Console_Game.dir/Classes/Logging/Logs/ILog.cpp.s
 
-CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o: CMakeFiles/Console_Game.dir/flags.make
-CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o: ../Classes/Game/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o -c "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.cpp"
-
-CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.cpp" > CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.i
-
-CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.cpp" -o CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.s
-
-CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.o: CMakeFiles/Console_Game.dir/flags.make
-CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.o: ../Classes/View/ViewGame/ViewGame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.o -c "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.cpp"
-
-CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.cpp" > CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.i
-
-CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.cpp" -o CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.s
-
-CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o: CMakeFiles/Console_Game.dir/flags.make
-CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o: ../Classes/Controler/Controler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o -c "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.cpp"
-
-CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.cpp" > CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.i
-
-CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.cpp" -o CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.s
-
 # Object files for target Console_Game
 Console_Game_OBJECTS = \
 "CMakeFiles/Console_Game.dir/main.cpp.o" \
@@ -470,10 +431,7 @@ Console_Game_OBJECTS = \
 "CMakeFiles/Console_Game.dir/Classes/Logging/Logs/FileLog/FileLog.cpp.o" \
 "CMakeFiles/Console_Game.dir/Classes/Event/Event.cpp.o" \
 "CMakeFiles/Console_Game.dir/Classes/Logging/Logs/ConsoleLog/ConsoleLog.cpp.o" \
-"CMakeFiles/Console_Game.dir/Classes/Logging/Logs/ILog.cpp.o" \
-"CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o" \
-"CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.o" \
-"CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o"
+"CMakeFiles/Console_Game.dir/Classes/Logging/Logs/ILog.cpp.o"
 
 # External object files for target Console_Game
 Console_Game_EXTERNAL_OBJECTS =
@@ -504,12 +462,9 @@ Console_Game: CMakeFiles/Console_Game.dir/Classes/Logging/Logs/FileLog/FileLog.c
 Console_Game: CMakeFiles/Console_Game.dir/Classes/Event/Event.cpp.o
 Console_Game: CMakeFiles/Console_Game.dir/Classes/Logging/Logs/ConsoleLog/ConsoleLog.cpp.o
 Console_Game: CMakeFiles/Console_Game.dir/Classes/Logging/Logs/ILog.cpp.o
-Console_Game: CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o
-Console_Game: CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.o
-Console_Game: CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o
 Console_Game: CMakeFiles/Console_Game.dir/build.make
 Console_Game: CMakeFiles/Console_Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable Console_Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable Console_Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Console_Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

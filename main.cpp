@@ -3,14 +3,20 @@
 #include "ViewGame.h"
 #include "Game.h"
 #include "Controler.h"
+#include "GenerationLevel.h"
 
 int main() {
     //локализация для юникода
     std::locale::global(std::locale("en_US.utf8"));
 
+    using GenLevel = GenerationLevel<1>;
+    GenLevel gen_level;
 
-    //отображение
-    Game game;
+
+
+    using NewGame = Game<GenLevel>;
+
+    NewGame game(gen_level);
     ViewGame  view(game);
     Controler controler(game);
 

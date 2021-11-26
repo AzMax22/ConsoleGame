@@ -35,25 +35,12 @@ void BuilderField::createEmptyField(int width, int height)  {
     }
 }
 
-unq_p<Player> BuilderField::buildStartCell(int x, int y) {
-    if (m_field->arr_cells[x][y] == nullptr) {
 
-        if (!_checkNear(x,y,TEndCell)){
-            m_field->arr_cells[x][y] = std::make_unique<StartCell>();
-            auto player = std::make_unique<Player>(); //создание игрока
-            player->setLocation(x, y, m_field.get());
-            return std::move(player);
-        } else {throw near_end_cell;}
-
-    } else {throw cell_occupied;}
-}
 
 void BuilderField::buildEndCell(int x, int y) {
     if (m_field->arr_cells[x][y] == nullptr) {
 
-        if (!_checkNear(x,y,TStartCell)) {
-            m_field->arr_cells[x][y] = std::make_unique<EndCell>();
-        } else {throw near_start_cell;}
+        m_field->arr_cells[x][y] = std::make_unique<EndCell>();
 
     } else {throw cell_occupied;}
 }
@@ -61,7 +48,11 @@ void BuilderField::buildEndCell(int x, int y) {
 void BuilderField::buildImpassableCell(int x, int y) {
     if (m_field->arr_cells[x][y] == nullptr) {
         m_field->arr_cells[x][y] = std::make_unique<NormalCell>(false);
-    } else {throw cell_occupied;}
+    } else {
+        if (m_field->arr_cells[x][y]->getPassable() == true) {
+            throw cell_occupied;
+        }
+    }
 }
 
 
@@ -101,43 +92,9 @@ unq_p<Field> BuilderField::getField() {
     return  std::move(m_field);
 }
 
-bool BuilderField::_checkNear(int x, int y, TypeCell t_cell) {
-    if(_checkXY(x-1, y, t_cell) || _checkXY(x+1, y, t_cell) ||
-            _checkXY(x, y-1, t_cell) || _checkXY(x, y+1, t_cell) ||
-            _checkXY(x-1, y-1, t_cell) || _checkXY(x+1, y-1, t_cell) ||
-            _checkXY(x-1, y+1, t_cell) || _checkXY(x+1, y+1, t_cell)){
 
-        return true;
-    } else {
-        return false;
-    }
-}
 
-bool BuilderField::_checkXY(int x, int y, TypeCell t_cell) {
-    if( (m_field->arr_cells[x][y] != nullptr)) {
-        if (m_field->arr_cells[x][y]->getTypeCell() == t_cell){
-            return true;
-        }
-    }
-    return false;
-}
 
-unq_p<Player> BuilderField::buildStartCell() {
-    std::random_device rd;   // non-deterministic generator
-    std::mt19937 gen(rd());  // to seed mersenne twister.
-    std::uniform_int_distribution<> rand_x(1,m_field->m_width);
-    std::uniform_int_distribution<> rand_y(1,m_field->m_height);
-
-    int i = 0;
-    unq_p<Player> player;
-    while (i == 0) {
-        try {
-            i += 1;
-            player = this->buildStartCell(rand_x(gen), rand_y(gen));
-        } catch (My_Exception &e) {i -= 1;}
-    }
-    return std::move(player);
-}
 
 void BuilderField::buildEndCell() {
     std::random_device rd;   // non-deterministic generator
@@ -151,6 +108,14 @@ void BuilderField::buildEndCell() {
             i += 1;
             this->buildEndCell(rand_x(gen), rand_y(gen));
         } catch (My_Exception &e) {i -= 1;}
+    }
+}
+
+void BuilderField::buildWall(int x_1, int y_1, int x_2, int y_2) {
+    for (int i_x = x_1; i_x <= x_2; i_x++) {
+        for (int i_y = y_1; i_y <= y_2; i_y++) {
+            buildImpassableCell(i_x,i_y);
+        }
     }
 }
 

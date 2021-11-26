@@ -1,7 +1,6 @@
 #include "Logger.h"
 #include "ICreature.h"
 #include "LocatedObject.h"
-#include "Game.h"
 #include "GameObject.h"
 
 Logger::Logger(unq_p<ILog> some_steam) {
@@ -143,24 +142,6 @@ void Logger::processNotification(EventAffect &event) {
     }
 }
 
-void Logger::processNotification(EventEndGame &event) {
-    auto &obj = dynamic_cast<Game&>(event.getObjEvent());
-
-    if (obj.gameState() == WIN) {
-        for (auto &&some_log: logs) {
-            some_log->steam() << "Игрок победил" << std::endl;
-        }
-    }else {
-        for (auto &&some_log: logs) {
-            some_log->steam() << "Игрок проиграл" << std::endl;
-        }
-    }
-
-    for (auto &&some_log: logs) {
-        some_log->steam() << "Конец Игры" << std::endl;
-    }
-
-}
 
 
 

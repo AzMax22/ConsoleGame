@@ -3,10 +3,9 @@
 
 #include "unq_p.h"
 #include "IAutonomy.h"
-#include "Field.h"
 #include "Observable.h"
 #include "LocatedObject.h"
-
+#include "Field.h"
 
 enum TypeCreature {
     TPlayer,

@@ -249,30 +249,6 @@ Classes/Console/Console.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Console/Console.cpp.s
 .PHONY : Classes/Console/Console.cpp.s
 
-Classes/Controler/Controler.o: Classes/Controler/Controler.cpp.o
-.PHONY : Classes/Controler/Controler.o
-
-# target to build an object file
-Classes/Controler/Controler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.o
-.PHONY : Classes/Controler/Controler.cpp.o
-
-Classes/Controler/Controler.i: Classes/Controler/Controler.cpp.i
-.PHONY : Classes/Controler/Controler.i
-
-# target to preprocess a source file
-Classes/Controler/Controler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.i
-.PHONY : Classes/Controler/Controler.cpp.i
-
-Classes/Controler/Controler.s: Classes/Controler/Controler.cpp.s
-.PHONY : Classes/Controler/Controler.s
-
-# target to generate assembly for a file
-Classes/Controler/Controler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Controler/Controler.cpp.s
-.PHONY : Classes/Controler/Controler.cpp.s
-
 Classes/Event/Event.o: Classes/Event/Event.cpp.o
 .PHONY : Classes/Event/Event.o
 
@@ -320,30 +296,6 @@ Classes/Field/Field.s: Classes/Field/Field.cpp.s
 Classes/Field/Field.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.s
 .PHONY : Classes/Field/Field.cpp.s
-
-Classes/Game/Game.o: Classes/Game/Game.cpp.o
-.PHONY : Classes/Game/Game.o
-
-# target to build an object file
-Classes/Game/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.o
-.PHONY : Classes/Game/Game.cpp.o
-
-Classes/Game/Game.i: Classes/Game/Game.cpp.i
-.PHONY : Classes/Game/Game.i
-
-# target to preprocess a source file
-Classes/Game/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.i
-.PHONY : Classes/Game/Game.cpp.i
-
-Classes/Game/Game.s: Classes/Game/Game.cpp.s
-.PHONY : Classes/Game/Game.s
-
-# target to generate assembly for a file
-Classes/Game/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/Game/Game.cpp.s
-.PHONY : Classes/Game/Game.cpp.s
 
 Classes/GameObject/GameObject.o: Classes/GameObject/GameObject.cpp.o
 .PHONY : Classes/GameObject/GameObject.o
@@ -536,30 +488,6 @@ Classes/View/ViewField/ViewField.s: Classes/View/ViewField/ViewField.cpp.s
 Classes/View/ViewField/ViewField.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/View/ViewField/ViewField.cpp.s
 .PHONY : Classes/View/ViewField/ViewField.cpp.s
-
-Classes/View/ViewGame/ViewGame.o: Classes/View/ViewGame/ViewGame.cpp.o
-.PHONY : Classes/View/ViewGame/ViewGame.o
-
-# target to build an object file
-Classes/View/ViewGame/ViewGame.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.o
-.PHONY : Classes/View/ViewGame/ViewGame.cpp.o
-
-Classes/View/ViewGame/ViewGame.i: Classes/View/ViewGame/ViewGame.cpp.i
-.PHONY : Classes/View/ViewGame/ViewGame.i
-
-# target to preprocess a source file
-Classes/View/ViewGame/ViewGame.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.i
-.PHONY : Classes/View/ViewGame/ViewGame.cpp.i
-
-Classes/View/ViewGame/ViewGame.s: Classes/View/ViewGame/ViewGame.cpp.s
-.PHONY : Classes/View/ViewGame/ViewGame.s
-
-# target to generate assembly for a file
-Classes/View/ViewGame/ViewGame.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Console_Game.dir/build.make CMakeFiles/Console_Game.dir/Classes/View/ViewGame/ViewGame.cpp.s
-.PHONY : Classes/View/ViewGame/ViewGame.cpp.s
 
 Classes/СellСontents/IAutonomy.o: Classes/СellСontents/IAutonomy.cpp.o
 .PHONY : Classes/СellСontents/IAutonomy.o
@@ -849,18 +777,12 @@ help:
 	@echo "... Classes/Console/Console.o"
 	@echo "... Classes/Console/Console.i"
 	@echo "... Classes/Console/Console.s"
-	@echo "... Classes/Controler/Controler.o"
-	@echo "... Classes/Controler/Controler.i"
-	@echo "... Classes/Controler/Controler.s"
 	@echo "... Classes/Event/Event.o"
 	@echo "... Classes/Event/Event.i"
 	@echo "... Classes/Event/Event.s"
 	@echo "... Classes/Field/Field.o"
 	@echo "... Classes/Field/Field.i"
 	@echo "... Classes/Field/Field.s"
-	@echo "... Classes/Game/Game.o"
-	@echo "... Classes/Game/Game.i"
-	@echo "... Classes/Game/Game.s"
 	@echo "... Classes/GameObject/GameObject.o"
 	@echo "... Classes/GameObject/GameObject.i"
 	@echo "... Classes/GameObject/GameObject.s"
@@ -885,9 +807,6 @@ help:
 	@echo "... Classes/View/ViewField/ViewField.o"
 	@echo "... Classes/View/ViewField/ViewField.i"
 	@echo "... Classes/View/ViewField/ViewField.s"
-	@echo "... Classes/View/ViewGame/ViewGame.o"
-	@echo "... Classes/View/ViewGame/ViewGame.i"
-	@echo "... Classes/View/ViewGame/ViewGame.s"
 	@echo "... Classes/СellСontents/IAutonomy.o"
 	@echo "... Classes/СellСontents/IAutonomy.i"
 	@echo "... Classes/СellСontents/IAutonomy.s"

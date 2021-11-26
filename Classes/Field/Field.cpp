@@ -89,3 +89,34 @@ arr2d_unq<ICell> Field::_init_arr_cells(int width, int height) {
     return tmp_arr_cells;
 }
 
+void Field::buildStartCell(int x, int y) {
+    if (arr_cells[x][y]->getPassable()) {
+
+        if (!_checkNear(x,y,TEndCell)){
+            arr_cells[x][y] = std::make_unique<StartCell>();
+        } else {throw std::runtime_error("Error set player on field: Near EndCell");}
+
+    } else {throw std::runtime_error("Error set player on field: Cell is impassable");}
+}
+
+bool Field::_checkNear(int x, int y, TypeCell t_cell) {
+    if(_checkXY(x-1, y, t_cell) || _checkXY(x+1, y, t_cell) ||
+       _checkXY(x, y-1, t_cell) || _checkXY(x, y+1, t_cell) ||
+       _checkXY(x-1, y-1, t_cell) || _checkXY(x+1, y-1, t_cell) ||
+       _checkXY(x-1, y+1, t_cell) || _checkXY(x+1, y+1, t_cell)){
+
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool Field::_checkXY(int x, int y, TypeCell t_cell) {
+    if( (arr_cells[x][y] != nullptr)) {
+        if (arr_cells[x][y]->getTypeCell() == t_cell){
+            return true;
+        }
+    }
+    return false;
+}
+

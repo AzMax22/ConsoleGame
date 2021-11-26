@@ -1,7 +1,7 @@
-#include "Game.h"
 
 
-Game::Game() {
+template<class GenLevel>
+Game<GenLevel>::Game(GenLevel& genlevel) {
     //инициализация объектов
     BuilderField builder;
     m_alien = std::make_unique<CleverAlien>();
@@ -13,13 +13,17 @@ Game::Game() {
     auto skelet2 = std::make_unique<HorizontalSkeleton>();
     auto scorpion = std::make_unique<VerticalScorpion>();*/
 
+    m_player = std::make_unique<Player>(); //создание игрока
+
+
     //строительство поля
-    builder.createEmptyField(20,20); //диапазон x = [1,20], y = [1,30]
-    //builder.buildRandomImpassableCells(20);
-    m_player = builder.buildStartCell(8, 1);
-    builder.buildEndCell();
-    builder.buildEndCell();
-    m_field = builder.getField();
+    /*builder.createEmptyField(30,20); //диапазон x = [1,20], y = [1,20]
+
+
+
+    builder.buildEndCell(30, 20);
+    m_field = builder.getField();*/
+    m_field = genlevel.generationField();
 
     //инициализация логерра
     auto cons_log = std::make_unique<ConsoleLog>();
@@ -38,7 +42,8 @@ Game::Game() {
     logger.addObservable(shield.get());*/
 
     m_alien->follow(m_player.get());
-    m_alien->setLocation(20, 20, m_field.get());
+    m_player->setLocation(1, 2, m_field.get());
+    m_alien->setLocation(20, 1, m_field.get());
     /*skelet->setLocation(15, 1, field1.get());
     scorpion->setLocation(5, 5, field1.get());
     sword->setLocation(1, 1, std::move(sword), field1.get());
@@ -48,13 +53,14 @@ Game::Game() {
 
 }
 
-void Game::update() {
+template<class GenLevel>
+void Game<GenLevel>::update() {
     if (m_player->getAlive()){
         if(m_player->win()){
             state_game = WIN;
 
             EventEndGame event(this);
-            m_logger->processNotification(event);
+            m_logger->processNotification<Game>(event);
             return;
         }
         m_player->update();
@@ -62,7 +68,7 @@ void Game::update() {
         state_game = LOSE;
 
         EventEndGame event(this);
-        m_logger->processNotification(event);
+        m_logger->processNotification<Game>(event);
         return;
     }
 
@@ -71,27 +77,33 @@ void Game::update() {
     }
 }
 
-Game::~Game() {
+template<class GenLevel>
+Game<GenLevel>::~Game() {
 
 }
 
-Field *Game::getField() {
+template<class GenLevel>
+Field *Game<GenLevel>::getField() {
     return m_field.get();
 }
 
-StateGame Game::gameState() {
+template<class GenLevel>
+StateGame Game<GenLevel>::gameState() {
     return state_game;
 }
 
-Logger *Game::getLogger() {
+template<class GenLevel>
+Logger *Game<GenLevel>::getLogger() {
     return m_logger.get();
 }
 
-std::string Game::name() {
+template<class GenLevel>
+std::string Game<GenLevel>::name() {
     return "Игра ";
 }
 
-void Game::movePlayer(int inc_x, int inc_y) {
+template<class GenLevel>
+void Game<GenLevel>::movePlayer(int inc_x, int inc_y) {
     m_player->move(inc_x,inc_y);
 }
 

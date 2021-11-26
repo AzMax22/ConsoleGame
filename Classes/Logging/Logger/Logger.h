@@ -9,6 +9,7 @@
 #include "ILog.h"
 #include "Event.h"
 #include "unq_p.h"
+#include "StateGame.h"
 
 
 
@@ -33,11 +34,34 @@ public:
     void processNotification(EventSetLocation& event);
     void processNotification(EventDeath& event);
     void processNotification(EventAffect& event);
+
+    template<class TGame>
     void processNotification(EventEndGame& event);
 };
 
 
 
+
+
+template<class TGame>
+void Logger::processNotification(EventEndGame &event) {
+    auto &obj = dynamic_cast<TGame&>(event.getObjEvent());
+
+    if (obj.gameState() == WIN) {
+        for (auto &&some_log: logs) {
+            some_log->steam() << "Игрок победил" << std::endl;
+        }
+    }else {
+        for (auto &&some_log: logs) {
+            some_log->steam() << "Игрок проиграл" << std::endl;
+        }
+    }
+
+    for (auto &&some_log: logs) {
+        some_log->steam() << "Конец Игры" << std::endl;
+    }
+
+}
 
 
 #endif //CONSOLE_GAME_LOGGER_H

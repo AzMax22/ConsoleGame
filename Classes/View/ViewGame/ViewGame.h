@@ -4,16 +4,17 @@
 #include "Game.h"
 #include "ViewField.h"
 
+template<class TGame>
 class ViewGame {
-    Game& m_game;
+    TGame& m_game;
     ViewField m_view_field;
 public:
-    ViewGame(Game& game);
+    ViewGame(TGame& game);
 
     //отрисовка
     void rendering();
 
 };
 
-
+#include "ViewGame.inl"
 #endif //CONSOLE_GAME_VIEWGAME_H

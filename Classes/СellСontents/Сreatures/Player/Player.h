@@ -2,10 +2,9 @@
 #define CONSOLE_GAME_PLAYER_H
 
 #include "ICreature.h"
-#include "IItem.h"
-#include "GameObject.h"
+//#include "GameObject.h"
 
-class BuilderField;
+//class BuilderField;
 
 class Player : public ICreature{
     //int    m_max_health = 100;
@@ -20,7 +19,7 @@ class Player : public ICreature{
         //которая будет уведомлять World ,о том что игрок достиг конечной клетки
         //и убрать игрока из коллекции автономных обьектов
         //в том числе и очистить Player::update()
-    void setLocation(int x, int y, Field* field) override;
+
 public:
     Player();
 
@@ -42,9 +41,12 @@ public:
 
     std::string name() override;
 
+
     ~Player() = default;
 
-    friend BuilderField;
+    void setLocation(int x, int y, Field* field) override;
+
+    //friend BuilderField;
 };
 
 

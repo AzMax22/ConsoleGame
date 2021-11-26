@@ -5,17 +5,16 @@
 #include "Field.h"
 #include "unq_p.h"
 #include "CleverAlien.h"
-#include "Logger.h"
 #include "FileLog.h"
 #include "ConsoleLog.h"
 #include "Event.h"
+#include "Logger.h"
+#include "StateGame.h"
 
-enum StateGame{
-    RUN,
-    WIN,
-    LOSE
-};
 
+
+
+template<class GenLevel>
 class Game : public GameObject{
     unq_p<Field> m_field;
     unq_p<Player> m_player ;
@@ -24,7 +23,7 @@ class Game : public GameObject{
     StateGame state_game = RUN;
 
 public:
-    Game();
+    Game(GenLevel& genlevel);
 
     void update();
     StateGame gameState();
@@ -40,4 +39,6 @@ public:
 };
 
 
+
+#include "Game.inl"
 #endif //CONSOLE_GAME_GAME_H

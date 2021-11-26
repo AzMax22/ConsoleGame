@@ -18,6 +18,22 @@ Player.h
 unq_p.h
 ../Classes/Cells/unq_p.h
 
+../Classes/Controler/Controler.h
+Game.h
+../Classes/Controler/Game.h
+Controler.inl
+../Classes/Controler/Controler.inl
+
+../Classes/Controler/Controler.inl
+iostream
+../Classes/Controler/iostream
+SetKeys.h
+../Classes/Controler/SetKeys.h
+
+../Classes/Controler/SetKeys.h
+string
+../Classes/Controler/string
+
 ../Classes/Event/Event.h
 GameObject.h
 ../Classes/Event/GameObject.h
@@ -39,14 +55,26 @@ unq_p.h
 ../Classes/Game/unq_p.h
 CleverAlien.h
 ../Classes/Game/CleverAlien.h
-Logger.h
-../Classes/Game/Logger.h
 FileLog.h
 ../Classes/Game/FileLog.h
 ConsoleLog.h
 ../Classes/Game/ConsoleLog.h
 Event.h
 ../Classes/Game/Event.h
+Logger.h
+../Classes/Game/Logger.h
+StateGame.h
+../Classes/Game/StateGame.h
+Game.inl
+../Classes/Game/Game.inl
+
+../Classes/Game/Game.inl
+
+../Classes/Game/Rule/GenerationLevel.h
+BuilderField.h
+../Classes/Game/Rule/BuilderField.h
+
+../Classes/Game/StateGame.h
 
 ../Classes/GameObject/GameObject.h
 string
@@ -67,6 +95,8 @@ Event.h
 ../Classes/Logging/Logger/Event.h
 unq_p.h
 ../Classes/Logging/Logger/unq_p.h
+StateGame.h
+../Classes/Logging/Logger/StateGame.h
 
 ../Classes/Logging/Logs/ConsoleLog/ConsoleLog.h
 ILog.h
@@ -92,13 +122,23 @@ string
 Logger.h
 ../Classes/Logging/Observable/Logger.h
 
-../Classes/СellСontents/IAutonomy.h
-
-../Classes/СellСontents/Items/IItem.h
+../Classes/View/ViewField/ViewField.h
 unq_p.h
-../Classes/СellСontents/Items/unq_p.h
-ICreature.h
-../Classes/СellСontents/Items/ICreature.h
+../Classes/View/ViewField/unq_p.h
+Field.h
+../Classes/View/ViewField/Field.h
+
+../Classes/View/ViewGame/ViewGame.h
+Game.h
+../Classes/View/ViewGame/Game.h
+ViewField.h
+../Classes/View/ViewGame/ViewField.h
+ViewGame.inl
+../Classes/View/ViewGame/ViewGame.inl
+
+../Classes/View/ViewGame/ViewGame.inl
+
+../Classes/СellСontents/IAutonomy.h
 
 ../Classes/СellСontents/LocatedObject.h
 GameObject.h
@@ -115,40 +155,30 @@ unq_p.h
 ../Classes/СellСontents/Сreatures/unq_p.h
 IAutonomy.h
 ../Classes/СellСontents/Сreatures/IAutonomy.h
-Field.h
-../Classes/СellСontents/Сreatures/Field.h
 Observable.h
 ../Classes/СellСontents/Сreatures/Observable.h
 LocatedObject.h
 ../Classes/СellСontents/Сreatures/LocatedObject.h
+Field.h
+../Classes/СellСontents/Сreatures/Field.h
 
 ../Classes/СellСontents/Сreatures/Player/Player.h
 ICreature.h
 ../Classes/СellСontents/Сreatures/Player/ICreature.h
-IItem.h
-../Classes/СellСontents/Сreatures/Player/IItem.h
-GameObject.h
-../Classes/СellСontents/Сreatures/Player/GameObject.h
 
 ../unq_p.h
 memory
 -
 
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.cpp
-Controler.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/main.cpp
 iostream
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/iostream
-SetKeys.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/SetKeys.h
-ncurses.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/ncurses.h
-
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.h
+-
+ViewGame.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/ViewGame.h
 Game.h
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Game.h
-
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/SetKeys.h
-string
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/string
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Game.h
+Controler.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Controler.h
+GenerationLevel.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/GenerationLevel.h
 

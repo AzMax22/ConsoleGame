@@ -47,6 +47,7 @@
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/BuilderField"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Rule"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/LogAdapterEN"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/FileLog"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs"/>
@@ -104,6 +105,7 @@
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/BuilderField"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler"/>
+					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Rule"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/LogAdapterEN"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs/FileLog"/>
 					<Add directory="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logs"/>
@@ -185,10 +187,10 @@
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Console/Console.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/Controler.inl">
 			<Option target="Console_Game"/>
 		</Unit>
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Controler/SetKeys.h">
@@ -206,10 +208,16 @@
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Field/Field.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Game.inl">
+			<Option target="Console_Game"/>
+		</Unit>
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Rule/GenerationLevel.h">
+			<Option target="Console_Game"/>
+		</Unit>
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/StateGame.h">
 			<Option target="Console_Game"/>
 		</Unit>
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/GameObject/GameObject.cpp">
@@ -260,10 +268,10 @@
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewField/ViewField.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.cpp">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.h">
 			<Option target="Console_Game"/>
 		</Unit>
-		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.h">
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.inl">
 			<Option target="Console_Game"/>
 		</Unit>
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/СellСontents/IAutonomy.cpp">
