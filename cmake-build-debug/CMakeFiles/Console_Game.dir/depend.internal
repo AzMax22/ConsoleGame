@@ -322,6 +322,7 @@ CMakeFiles/Console_Game.dir/main.cpp.o
  ../Classes/Game/Game.h
  ../Classes/Game/Game.inl
  ../Classes/Game/Rule/GenerationLevel.h
+ ../Classes/Game/Rule/RWinAndLose.h
  ../Classes/Game/Rule/RuleSetLocatedGameObj.h
  ../Classes/Game/StateGame.h
  ../Classes/GameObject/GameObject.h

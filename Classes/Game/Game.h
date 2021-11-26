@@ -14,22 +14,24 @@
 
 
 
-template<class GenLevel, class RSetLocatedObj>
+template<class GenLevel, class RSetLocatedObj, class RWinAndLose>
 class Game : public GameObject{
     unq_p<Field> m_field;
     std::vector<unq_p<IAutonomy>> m_set_update_obj;
     unq_p<Logger> m_logger;
     unq_p<Player> m_player;
     StateGame state_game = RUN;
+    RWinAndLose& m_r_win_lose;
 
 public:
-    Game(GenLevel& genlevel, RSetLocatedObj& r_set_located);
+    Game(GenLevel& genlevel, RSetLocatedObj& r_set_located, RWinAndLose& r_win_lose);
 
     void update();
     StateGame gameState();
 
     Field* getField();
     Logger* getLogger();
+    Player* getPlayer();
     void movePlayer(int inc_x, int inc_y);
 
     std::string name() override;

@@ -219,6 +219,9 @@
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Rule/GenerationLevel.h">
 			<Option target="Console_Game"/>
 		</Unit>
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Rule/RWinAndLose.h">
+			<Option target="Console_Game"/>
+		</Unit>
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Game/Rule/RuleSetLocatedGameObj.h">
 			<Option target="Console_Game"/>
 		</Unit>

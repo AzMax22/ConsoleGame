@@ -26,17 +26,9 @@ TypeCreature Player::getTypeCreature() const {
 
 void Player::update() {
     increaseHealth(1);//реген
-
-    if (m_field->getCell(m_x, m_y).getTypeCell() == TEndCell) {
-        m_finish = true;
-    }
 }
 
-void Player::takeItem() {
-    unq_p<IItem> item = m_field->getCell(m_x, m_y).popItem();
-    item->affect(this);
-    item.reset();
-}
+
 
 void Player::setLocation(int x, int y, Field *field) {
     field->buildStartCell(x,y);
@@ -51,10 +43,6 @@ int Player::getX() {
 
 int Player::getY() {
     return m_y;
-}
-
-bool Player::win() {
-    return m_finish;
 }
 
 std::string Player::name() {
@@ -78,7 +66,7 @@ void Player::move(int inc_x, int inc_y) {
     m_field->getCell(m_x, m_y ).putCreature(myself);
 
     if (next_cell.topItem()) {  //проверка есть предмет
-        next_cell.popItem()->affect(this);
+        next_cell.popItem()->affect(this); //подбор предмета
     }
 
     EventMove event(this, inc_x , inc_y);

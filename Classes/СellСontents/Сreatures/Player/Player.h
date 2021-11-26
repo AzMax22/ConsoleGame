@@ -13,12 +13,6 @@ class Player : public ICreature{
     //int    m_damage = 10;
     //bool   m_alive = true;
 
-    bool   m_finish = false;
-        //в последдствии когда будет реализован Observable,
-        //нужно перенести ответственость за проверку на EndCell,
-        //которая будет уведомлять World ,о том что игрок достиг конечной клетки
-        //и убрать игрока из коллекции автономных обьектов
-        //в том числе и очистить Player::update()
 
 public:
     Player();
@@ -30,14 +24,11 @@ public:
 
     void update() override ; //реализация поведения(отсутствует)
 
-    void takeItem(); //взять предмет
-
     TypeCreature getTypeCreature() const override; //фун. возвращает тип обьекта через enum TypeCell
 
     int getX();
     int getY();
 
-    bool win();
 
     std::string name() override;
 

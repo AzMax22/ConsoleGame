@@ -69,10 +69,16 @@ Game.inl
 ../Classes/Game/Game.inl
 
 ../Classes/Game/Game.inl
+Game.h
+../Classes/Game/Game.h
 
 ../Classes/Game/Rule/GenerationLevel.h
 BuilderField.h
 ../Classes/Game/Rule/BuilderField.h
+
+../Classes/Game/Rule/RWinAndLose.h
+Game.h
+../Classes/Game/Rule/Game.h
 
 ../Classes/Game/Rule/RuleSetLocatedGameObj.h
 IAutonomy.h
@@ -241,4 +247,6 @@ GenerationLevel.h
 /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/GenerationLevel.h
 RuleSetLocatedGameObj.h
 /home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/RuleSetLocatedGameObj.h
+RWinAndLose.h
+/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/RWinAndLose.h
 
