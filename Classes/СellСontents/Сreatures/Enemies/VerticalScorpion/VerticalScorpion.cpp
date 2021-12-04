@@ -6,9 +6,17 @@ VerticalScorpion::VerticalScorpion() : ICreature() {
     m_health = 30;
     m_armor = 5;
     m_damage = 20;
+    m_step_duration = 20;
+    m_time_last_step = 0;
 }
 
 void VerticalScorpion::update() {
+    if (m_time_last_step != m_step_duration) {//задержка хода
+        m_time_last_step++;
+        return;
+    }
+    m_time_last_step = 0;
+
     int  inc;
 
     if(m_patrollingTop) { //опр смещение обекта на inc
@@ -43,12 +51,13 @@ void VerticalScorpion::update() {
         }
 
     } else {//перемещение
-        ICreature* myself = m_field->getCell(m_x, m_y).popCreature();
+        ICreature *myself = m_field->getCell(m_x, m_y).popCreature();
         m_y = m_y + inc;
         next_cell.putCreature(myself);
 
-        EventMove event(this, 0 , inc);
+        EventMove event(this, 0, inc);
         notify<EventMove>(event);
+
     }
 
     return;

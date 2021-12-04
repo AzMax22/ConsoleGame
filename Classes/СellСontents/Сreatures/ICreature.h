@@ -21,6 +21,8 @@ protected:
     int m_health ;
     int m_armor ;
     int m_damage ;
+    int m_step_duration ; //измеряется в количестве  тактов чтобы сделать шаг
+    int m_time_last_step ;
 
     int m_x, m_y; //координаты на поле
     Field* m_field; //указатель на поле

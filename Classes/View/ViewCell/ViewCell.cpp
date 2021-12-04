@@ -5,114 +5,151 @@
 #include "Console.h"
 #include "HorizontalSkeleton.h"
 #include "VerticalScorpion.h"
+#include <ncursesw/ncurses.h>
+#include <locale.h>
+#include <wchar.h>
+#include "ViewGame.h"
+
 
 void ViewCell::setModel(ICell &cell) {
  m_cell = &cell;
 }
 
 void ViewCell::draw() {
+    int color_background = COLOR_BLACK;
+    int color_foreground = COLOR_WHITE;
+    ColorText color_pair;
+    const wchar_t* wstr;
+
+
     switch (m_cell->getTypeCell()) {
         case TNormalCell:
-            g_console.setTextAttrib(B_BLACK);
-            std::wcout << "  ";
+            color_background = COLOR_BLACK;
             break;
         case TEndCell:
-            g_console.setTextAttrib(B_RED);
-            std::wcout << "  ";
+            color_background = COLOR_RED;
             break;
         case TStartCell:
-            std::wcout << "\x1b[42m  ";
+            color_background = COLOR_GREEN;
             break;
         case TImpassableCell:
-            g_console.setTextAttrib(B_CYAN);
-            std::wcout << "  ";
+            color_background = COLOR_CYAN;
             break;
     }
 
 
 
     if (m_cell->topItem()) { //проверка на nullptr
-        g_console.toLeftCursor();
-
         switch (m_cell->topItem()->getTypeItem()) {
             case TSword: {
-                g_console.setTextAttrib(F_BLUE);
-                std::wcout << L"🗡 ";
-
+                color_foreground = COLOR_BLUE;
+                wstr = L"🗡 ";
                 break;
             }
 
             case TCroissant: {
-                g_console.setTextAttrib(F_GREEN);
-                std::wcout << L"✙ ";
-
+                color_foreground = COLOR_GREEN;
+                wstr = L"✙ ";
                 break;
             }
 
             case TShield: {
-                g_console.setTextAttrib(F_CYAN);
-                std::wcout << L"⛨ ";
-
+                color_foreground = COLOR_CYAN;
+                wstr = L"⛨ ";
                 break;
             }
 
 
         }
-
+        color_pair = _convertToColorPair(color_foreground, color_background);
+        attron(COLOR_PAIR(color_pair));
+        addwstr(wstr);
+        attroff(COLOR_PAIR(color_pair));
+        return;
     }
 
 
 
 
     if (m_cell->topCreature()) { //проверка на nullptr
-        g_console.toLeftCursor();
 
         switch (m_cell->topCreature()->getTypeCreature()) {
             case THorizontalSkeleton: {
-                g_console.setTextAttrib(F_YELLOW);
+                color_foreground = COLOR_YELLOW;
 
                 auto hor_skeleton = dynamic_cast<HorizontalSkeleton *>(m_cell->topCreature());
                 if (hor_skeleton->getPatrollingRight() == true) {
-                    std::wcout << L"┞↠";
+                    wstr = L"┞↠";
                 } else {
-                    std::wcout << L"↞┦";
+                    wstr = L"↞┦";
                 }
                 break;
             }
             case TVerticalScorpion: {
-                g_console.setTextAttrib(F_YELLOW);
+                color_foreground = COLOR_YELLOW;
 
                 auto vert_scorpion = dynamic_cast<VerticalScorpion *>(m_cell->topCreature());
                 if (vert_scorpion->getPatrollingTop() == true) {
-                    std::wcout << L"ᖿᖼ";
+                    wstr = L"ᖿᖼ";
                 } else {
-                    std::wcout << L"ᖽᖾ";
+                    wstr = L"ᖽᖾ";
                 }
 
                 break;
             }
 
             case TPlayer: {
-                g_console.setTextAttrib(F_WHITE);
-                std::wcout << L"⮟ "; //
+                color_foreground = COLOR_WHITE;
+                wstr = L"⮟ ";
 
                 break;
             }
 
             case TCleverAlien: {
-                std::wcout << L"👾";
-
+                wstr = L"👾";
                 break;
             }
 
 
         }
+        color_pair = _convertToColorPair(color_foreground, color_background);
+        attron(COLOR_PAIR(color_pair));
+        addwstr(wstr);
+        attroff(COLOR_PAIR(color_pair));
+        return;
     }
 
 
 
+    color_pair = _convertToColorPair(color_foreground, color_background);
+    attron(COLOR_PAIR(color_pair));
+    addwstr(L"  ");
+    attroff(COLOR_PAIR(color_pair));
+}
 
-
-
-    g_console.resetTextColor();
+ColorText ViewCell::_convertToColorPair(int front, int back) {
+    if ((front == COLOR_WHITE)and(back == COLOR_CYAN)){
+        return Color_FWhite_BCyan;
+    }
+    if ((front == COLOR_WHITE)and(back == COLOR_GREEN)){
+        return Color_FWhite_BGreen;
+    }
+    if ((front == COLOR_WHITE)and(back == COLOR_RED)){
+        return Color_FWhite_BRed;
+    }
+    if ((front == COLOR_WHITE)and(back == COLOR_BLACK)){
+        return Color_FWhite_BBlack;
+    }
+    if ((front == COLOR_BLUE)and(back == COLOR_BLACK)){
+        return Color_FBlue_BBlack;
+    }
+    if ((front == COLOR_GREEN)and(back == COLOR_BLACK)){
+        return Color_FGreen_BBlack;
+    }
+    if ((front == COLOR_CYAN)and(back == COLOR_BLACK)){
+        return Color_FCyan_BBlack;
+    }
+    if ((front == COLOR_YELLOW)and(back == COLOR_BLACK)){
+        return Color_FYellow_BBlack;
+    }
 }

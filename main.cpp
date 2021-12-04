@@ -6,10 +6,18 @@
 #include "GenerationLevel.h"
 #include "RuleSetLocatedGameObj.h"
 #include "RWinAndLose.h"
+#include <ncursesw/ncurses.h>
+#include <locale.h>
+#include <wchar.h>
+#include "unistd.h"
+
 
 int main() {
     //локализация для юникода
     std::locale::global(std::locale("en_US.utf8"));
+
+    //инициализация билиотеки ncures.h и задание нужного режима консоли
+    initscr();
 
     const int level = 1;
 
@@ -28,23 +36,24 @@ int main() {
     ViewGame  view(game);
     Controler controler(game);
 
-
     view.rendering(); //начальное отображние
 
-
     while (game.gameState() == RUN){
+
+
         controler.update();
         game.update();
         view.rendering();
 
-        //usleep(200000*4);
-
+        usleep(20000);
     }
 
 
-    wchar_t a;
-    a = std::wcin.get();
+    //wchar_t a;
+    //a = std::wcin.get();
 
+    //освобождение ресурсов ncurses
+    endwin();
 
     //сбрасываем локаль , иначе будет утечка памяти
     std::locale::global(std::locale("C"));

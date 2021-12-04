@@ -7,7 +7,8 @@ HorizontalSkeleton::HorizontalSkeleton(): ICreature(){
     m_health = 50;
     m_armor = 5;
     m_damage = 10;
-
+    m_step_duration = 20;
+    m_time_last_step = 0;
 }
 
 TypeCreature HorizontalSkeleton::getTypeCreature() const {
@@ -16,6 +17,12 @@ TypeCreature HorizontalSkeleton::getTypeCreature() const {
 
 
 void HorizontalSkeleton::update() {
+    if (m_time_last_step != m_step_duration) {//задержка хода
+        m_time_last_step++;
+        return;
+    }
+    m_time_last_step = 0;
+
     int  inc;
 
     if(m_patrollingRight) { //опр смещение обекта на inc
@@ -50,7 +57,8 @@ void HorizontalSkeleton::update() {
         }
 
     } else {//перемещение
-        ICreature* myself = m_field->getCell(m_x, m_y).popCreature();
+
+        ICreature *myself = m_field->getCell(m_x, m_y).popCreature();
         m_x = m_x + inc;
         next_cell.putCreature(myself);
 

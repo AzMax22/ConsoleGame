@@ -7,9 +7,17 @@ CleverAlien::CleverAlien(Player* player) : ICreature(){
     m_health = 60;
     m_armor = 5;
     m_damage = 20;
+    m_step_duration = 10;
+    m_time_last_step = 0;
 }
 
 void CleverAlien::update() {
+    if (m_time_last_step != m_step_duration) {//задержка хода
+        m_time_last_step++;
+        return;
+    }
+    m_time_last_step = 0;
+
     int d_x =  m_player->getX()  - m_x;
     int d_y =  m_player->getY() - m_y;
 
@@ -55,6 +63,7 @@ void CleverAlien::update() {
         }
 
     } else {//перемещение
+
         ICreature* myself = m_field->getCell(m_x, m_y).popCreature();
         m_x = m_x + inc_x;
         m_y = m_y + inc_y;
@@ -63,6 +72,7 @@ void CleverAlien::update() {
         //логирование
         EventMove event(this, inc_x, inc_y);
         notify<EventMove>(event);
+
 
     }
 }

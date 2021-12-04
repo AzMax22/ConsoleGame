@@ -7,6 +7,8 @@ Player::Player() : ICreature() {
     m_health = 50;
     m_armor = 2;
     m_damage = 10;
+    m_step_duration = 2;
+    m_time_last_step = 0;
 
 }
 
@@ -26,6 +28,7 @@ TypeCreature Player::getTypeCreature() const {
 
 void Player::update() {
     increaseHealth(1);//реген
+    m_time_last_step++;
 }
 
 
@@ -50,6 +53,10 @@ std::string Player::name() {
 }
 
 void Player::move(int inc_x, int inc_y) {
+    if (m_time_last_step < m_step_duration){
+        return;
+    }
+
     ICell& next_cell = m_field->getCell(m_x + inc_x, m_y + inc_y);
 
     if (next_cell.getPassable() == false) {  //проверка на проходимость след клетки
@@ -64,6 +71,7 @@ void Player::move(int inc_x, int inc_y) {
     m_x = m_x + inc_x;
     m_y = m_y + inc_y;
     m_field->getCell(m_x, m_y ).putCreature(myself);
+    m_time_last_step = 0;//сброс времени с последнего шага
 
     if (next_cell.topItem()) {  //проверка есть предмет
         next_cell.popItem()->affect(this); //подбор предмета

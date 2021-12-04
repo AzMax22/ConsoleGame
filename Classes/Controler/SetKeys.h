@@ -5,15 +5,15 @@
 
 class SetKeys{
 public:
-    static std::wstring keyUp ;
-    static std::wstring keyDown ;
-    static std::wstring keyLeft ;
-    static std::wstring keyRight ;
+    static std::vector<int> keyUp ;
+    static std::vector<int> keyDown ;
+    static std::vector<int> keyLeft ;
+    static std::vector<int> keyRight ;
 };
 
 
-std::wstring SetKeys::keyUp = L"wWцЦ" ;
-std::wstring SetKeys::keyDown = L"SsЫы" ;
-std::wstring SetKeys::keyLeft = L"aAфФ";
-std::wstring SetKeys::keyRight = L"dDвВ";
+std::vector<int> SetKeys::keyUp = {KEY_UP,L'w',L'W', L'ц', L'Ц'};
+std::vector<int> SetKeys::keyDown = {KEY_DOWN,L's',L'S', L'ы', L'Ы'} ;
+std::vector<int> SetKeys::keyLeft = {KEY_LEFT,L'a',L'A', L'ф', L'Ф'};
+std::vector<int> SetKeys::keyRight = {KEY_RIGHT,L'd',L'D', L'в', L'В'};
 #endif //CONSOLE_GAME_SETKEYS_H
