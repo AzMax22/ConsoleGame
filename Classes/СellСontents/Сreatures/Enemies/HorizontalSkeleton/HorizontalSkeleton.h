@@ -13,6 +13,7 @@ class HorizontalSkeleton : public ICreature{
     //int    m_damage = 10;
     //bool   m_alive = true;
     bool  m_patrollingRight = true; //в какую сторону идет скелет
+    void _move(ICell& next_cell, int inc);
 public:
     HorizontalSkeleton();
     void update() override; //реализация поведения

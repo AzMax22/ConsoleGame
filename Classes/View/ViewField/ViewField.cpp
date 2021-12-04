@@ -6,15 +6,10 @@
 
 ViewField::ViewField(Field* field) {
     m_field = field;
-    //g_console.visibleCursor(false);
-    //g_console.clearScreen();
 }
 
 void ViewField::rendering() {
     ViewCell view_cell;
-    //g_console.clearScreen(); // if not debag delet
-    //g_console.cursorToHome();
-    //erase();
 
 
     for (int y = 0; y < m_field->getHeight()+2; y++) {
@@ -23,11 +18,10 @@ void ViewField::rendering() {
             view_cell.setModel(m_field->getCell(x, y));
             view_cell.draw();
         }
-        //std::wcout << std::endl;
     }
+
 }
 
 ViewField::~ViewField() {
-    //g_console.clearScreen();
-    //g_console.visibleCursor(true);
+
 }

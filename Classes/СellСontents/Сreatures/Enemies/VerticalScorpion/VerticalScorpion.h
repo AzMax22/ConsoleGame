@@ -11,6 +11,8 @@ class VerticalScorpion : public ICreature{
     //int    m_damage = 20;
     //bool   m_alive = true;
     bool  m_patrollingTop = true; //в какую сторону идет скелет
+
+    void _move(ICell& next_cell, int inc);
 public:
     VerticalScorpion();
     void update() override; //реализация поведения

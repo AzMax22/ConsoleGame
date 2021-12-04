@@ -178,4 +178,5 @@ CMakeFiles/Console_Game.dir/Classes/Logging/Logger/Logger.cpp.o: \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Logging/Logger/Logger.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/LocatedObject.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Field/Field.h \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Cells/ICell.h
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Cells/ICell.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/AttackedObj/AttackedObj.h

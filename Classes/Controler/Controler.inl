@@ -1,5 +1,7 @@
 #include "iostream"
 #include "SetKeys.h"
+#include "Controler.h"
+
 #include <ncursesw/ncurses.h>
 #include <locale.h>
 #include <wchar.h>
@@ -32,11 +34,25 @@ void Controler<TGame>::update() {
     if (find(SetKeys::keyRight.begin(),SetKeys::keyRight.end(),ch) != SetKeys::keyRight.end()){
         m_game.movePlayer(1, 0);
     }
+    if (find(SetKeys::keyExit.begin(),SetKeys::keyExit.end(),ch) != SetKeys::keyExit.end()){
+        m_game.gameExit();
+    }
+    if (find(SetKeys::keyAttack.begin(),SetKeys::keyAttack.end(),ch) != SetKeys::keyAttack.end()){
+        m_game.attackPlayer();
+    }
 
     flushinp();//сброс буфера ввода
 }
 
 template<class TGame>
 Controler<TGame>::~Controler() {
+
+}
+
+template<class TGame>
+void Controler<TGame>::waitingInput() {
+    nodelay(stdscr, FALSE);
+    wint_t ch ;
+    get_wch(&ch);
 
 }

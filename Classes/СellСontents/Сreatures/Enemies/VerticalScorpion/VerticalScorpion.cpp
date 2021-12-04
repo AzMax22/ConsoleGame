@@ -6,17 +6,13 @@ VerticalScorpion::VerticalScorpion() : ICreature() {
     m_health = 30;
     m_armor = 5;
     m_damage = 20;
-    m_step_duration = 20;
+    m_interval_steps = 20; //количество тактов между перемещения
     m_time_last_step = 0;
+    m_interval_attacks = 30; //количество тактов между атаками
+    m_time_last_attack = 0;
 }
 
 void VerticalScorpion::update() {
-    if (m_time_last_step != m_step_duration) {//задержка хода
-        m_time_last_step++;
-        return;
-    }
-    m_time_last_step = 0;
-
     int  inc;
 
     if(m_patrollingTop) { //опр смещение обекта на inc
@@ -26,6 +22,46 @@ void VerticalScorpion::update() {
     }
 
     ICell& next_cell = m_field->getCell(m_x, m_y + inc);
+
+    if (next_cell.topCreature()) {  //проверка есть ли существо на след клетке
+        if (next_cell.topCreature()->getTypeCreature() == TPlayer) {
+            m_time_last_step = 0;//сброс задержки хода
+
+            //нанесение урона
+            if (m_time_last_attack != m_interval_attacks) {//задержка атаки
+                m_time_last_attack++;
+            } else {
+                m_time_last_attack = 0;
+                toDamage(next_cell.topCreature());
+                return;
+            }
+        }
+    }
+
+    //перемещение(если надо)
+    if (m_time_last_step != m_interval_steps) {//задержка хода
+        m_time_last_step++;
+    }else {
+        m_time_last_step = 0;
+        _move(next_cell, inc);
+    }
+
+
+}
+
+TypeCreature VerticalScorpion::getTypeCreature() const {
+    return TVerticalScorpion;
+}
+
+bool VerticalScorpion::getPatrollingTop() {
+    return m_patrollingTop;
+}
+
+std::string VerticalScorpion::name() {
+    return "Скорпион ";
+}
+
+void VerticalScorpion::_move(ICell& next_cell, int inc) {
 
     if (next_cell.getPassable() == false){  //проверка на проходимость след клетки
         m_patrollingTop = !m_patrollingTop; //разворот
@@ -39,8 +75,8 @@ void VerticalScorpion::update() {
     if (next_cell.topCreature()) {  //проверка есть ли существо на след клетке
 
         if (next_cell.topCreature()->getTypeCreature() == TPlayer) {
-            toDamage(next_cell.topCreature());  //нанесение урона
-            return;
+            //toDamage(next_cell.topCreature());  //нанесение урона
+            //return;
         } else {
             m_patrollingTop = !m_patrollingTop; //разворот если сущ не игрок
 
@@ -63,15 +99,4 @@ void VerticalScorpion::update() {
     return;
 }
 
-TypeCreature VerticalScorpion::getTypeCreature() const {
-    return TVerticalScorpion;
-}
-
-bool VerticalScorpion::getPatrollingTop() {
-    return m_patrollingTop;
-}
-
-std::string VerticalScorpion::name() {
-    return "Скорпион ";
-}
 

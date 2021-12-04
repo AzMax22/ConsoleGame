@@ -13,7 +13,13 @@ enum ColorText{
     Color_FBlue_BBlack,
     Color_FGreen_BBlack,
     Color_FCyan_BBlack,
-    Color_FYellow_BBlack
+    Color_FYellow_BBlack,
+    Color_FRed_BBlack,
+    Color_FBlue_BRed,
+    Color_FGreen_BRed,
+    Color_FMagneta_BBlack,
+    Color_FGreen_BDef,
+    Color_FRed_BDef
 };
 
 template<class TGame>
@@ -26,6 +32,7 @@ public:
     //отрисовка
     void rendering();
 
+    void endRengering();
 };
 
 #include "ViewGame.inl"

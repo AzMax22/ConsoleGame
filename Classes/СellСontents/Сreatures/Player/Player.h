@@ -12,12 +12,16 @@ class Player : public ICreature{
     //int    m_armor = 0;
     //int    m_damage = 10;
     //bool   m_alive = true;
-
+    int m_horizontal_direction = 0;
+    int m_vertical_direction = 1;
+    int m_interval_regen ;
+    int m_time_last_regen ;
 
 public:
     Player();
 
     void move(int inc_x,int inc_y);
+    void attack();
 
     void increaseMaxHealth (int inc_max_health);  //увеличить максимальное кол-во XP
     void decreaseMaxHealth (int dec_max_health);  //уменьшить максимальное кол-во XP
@@ -38,6 +42,8 @@ public:
     void setLocation(int x, int y, Field* field) override;
 
     //friend BuilderField;
+    int getVerticalDirection();
+    int getHorizontalDirection();
 };
 
 

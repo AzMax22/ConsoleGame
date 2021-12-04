@@ -147,6 +147,7 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewCell/ViewCell.cpp.o: \
  /usr/include/c++/9/backward/auto_ptr.h /usr/include/c++/9/bit \
  /usr/include/c++/9/pstl/glue_memory_defs.h \
  /usr/include/c++/9/pstl/execution_defs.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/AttackedObj/AttackedObj.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Game/Game.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/BuilderField/BuilderField.h \
@@ -193,7 +194,9 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewCell/ViewCell.cpp.o: \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/View/ViewField/ViewField.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.inl \
  /usr/include/curses.h /usr/include/ncurses_dll.h /usr/include/unctrl.h \
- /usr/include/curses.h /usr/include/c++/9/iostream \
+ /usr/include/curses.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.h \
+ /usr/include/c++/9/iostream \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/Items/IItem.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Console/Console.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.h \

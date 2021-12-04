@@ -10,10 +10,13 @@ Logger::Logger(unq_p<ILog> some_steam) {
 
 
 void Logger::update() {
+    /*if (something_happened == false){ return;}
+
     for(auto&& some_log : logs){
         some_log->steam() << "---------------------------------------------------------------------------------" << std::endl;
         some_log->update();
     }
+    something_happened = false;*/
 
 }
 
@@ -143,6 +146,26 @@ void Logger::processNotification(EventDeath &event) {
 void Logger::processNotification(EventAffect &event) {
     for(auto&& some_log : logs) {
         some_log->steam() <<  event.getAnotherObj() << "подобрал " <<event.getObjEvent()  << std::endl;
+    }
+}
+
+/*void Logger::somethingHappened() {
+    something_happened = true;
+}*/
+
+void Logger::processNotification(EventChangeMaxHealth &event) {
+    auto &obj = dynamic_cast<ICreature&>(event.getObjEvent());
+
+    if (event.getIncHealth() > 0) {
+        for(auto&& some_log : logs) {
+            some_log->steam() << event.getObjEvent() << "увеличил макс. здоровье на " << event.getIncHealth() << " ед." \
+            << ", текущее макс. здоровье " <<  obj.getMaxHealth() << std::endl;
+        }
+    } else {
+        for (auto &&some_log: logs) {
+            some_log->steam() << event.getObjEvent() << "уменьшил макс. здоровье на " << -event.getIncHealth() << " ед." \
+            << ", текущее макс. здоровье " <<  obj.getMaxHealth() << std::endl;
+        }
     }
 }
 

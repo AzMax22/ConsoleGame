@@ -15,6 +15,7 @@ public:
 
     //отрисовка
     void update();
+    void waitingInput();
 
     ~Controler();
 };

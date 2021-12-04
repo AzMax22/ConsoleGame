@@ -91,3 +91,13 @@ GameObject &EventAffect::getAnotherObj() {
 EventEndGame::EventEndGame(GameObject* obj): IEvent(obj) {
 
 }
+
+
+//////////////////////////////////// EventChangeMaxHealth ////////////////////////////////////////////////////
+EventChangeMaxHealth::EventChangeMaxHealth(GameObject *obj, int inc_health) : IEvent(obj)  {
+    m_inc_health = inc_health;
+}
+
+int EventChangeMaxHealth::getIncHealth() {
+    return m_inc_health;
+}

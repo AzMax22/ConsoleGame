@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Console_Game.dir/Classes/AttackedObj/AttackedObj.cpp.o"
+  "CMakeFiles/Console_Game.dir/Classes/AttackedObj/AttackedObj.cpp.o.d"
   "CMakeFiles/Console_Game.dir/Classes/BuilderField/BuilderField.cpp.o"
   "CMakeFiles/Console_Game.dir/Classes/BuilderField/BuilderField.cpp.o.d"
   "CMakeFiles/Console_Game.dir/Classes/Cells/EndCell/EndCell.cpp.o"

@@ -47,6 +47,16 @@ public:
 
 };
 
+//////////////////////////////////// EventChangeMaxHealth ////////////////////////////////////////////////////
+class EventChangeMaxHealth : public IEvent{
+    int m_inc_health;
+public:
+    EventChangeMaxHealth(GameObject* obj, int inc_health);
+
+    int getIncHealth();
+
+};
+
 //////////////////////////////////// EventChangeArmor ////////////////////////////////////////////////////
 class EventChangeArmor : public IEvent{
     int m_inc_armor;

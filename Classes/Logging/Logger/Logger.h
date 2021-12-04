@@ -18,12 +18,15 @@ class Observable;
 
 class Logger{
     std::vector<unq_p<ILog>> logs;
+    //bool something_happened = false;
 public:
     Logger(unq_p<ILog> some_steam);
 
     void addLog(unq_p<ILog> some_steam);
     void addObservable(Observable* some_obsle);
     void update();
+
+    //void somethingHappened();
 
     void processNotification(EventMove& event);
     void processNotification(EventReversal& event);
@@ -34,6 +37,7 @@ public:
     void processNotification(EventSetLocation& event);
     void processNotification(EventDeath& event);
     void processNotification(EventAffect& event);
+    void processNotification(EventChangeMaxHealth& event);
 
     template<class TGame>
     void processNotification(EventEndGame& event);

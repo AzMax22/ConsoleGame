@@ -166,6 +166,7 @@ CMakeFiles/Console_Game.dir/main.cpp.o: \
  /usr/include/c++/9/backward/auto_ptr.h /usr/include/c++/9/bit \
  /usr/include/c++/9/pstl/glue_memory_defs.h \
  /usr/include/c++/9/pstl/execution_defs.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/AttackedObj/AttackedObj.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Player/Player.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/ICreature.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/IAutonomy.h \
@@ -193,9 +194,11 @@ CMakeFiles/Console_Game.dir/main.cpp.o: \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.inl \
  /usr/include/curses.h /usr/include/ncurses_dll.h /usr/include/unctrl.h \
  /usr/include/curses.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/View/ViewGame/ViewGame.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Controler/Controler.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Controler/Controler.inl \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Controler/SetKeys.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Controler/Controler.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Game/Rule/GenerationLevel.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Game/Rule/RuleSetLocatedGameObj.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.h \

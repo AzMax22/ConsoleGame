@@ -27,18 +27,18 @@ int main() {
     using RSetLocatedObj = RuleSetLocatedGameObj<level, 1>;
     RSetLocatedObj r_set_located;
 
-    using RWinAndLose = RWinAndLose<NoDamageMode>;
+    using RWinAndLose = RWinAndLose<NormalMode>;
     RWinAndLose r_win_lose;
 
     using NewGame = Game<GenLevel, RSetLocatedObj, RWinAndLose>;
 
     NewGame game(gen_level, r_set_located, r_win_lose);
-    ViewGame  view(game);
+    ViewGame view(game);
     Controler controler(game);
 
     view.rendering(); //начальное отображние
 
-    while (game.gameState() == RUN){
+    while (game.gameState() == RUN) {
 
 
         controler.update();
@@ -49,11 +49,15 @@ int main() {
     }
 
 
-    //wchar_t a;
-    //a = std::wcin.get();
+    if (game.gameState() != EXIT) {
+        view.endRengering();
+        controler.waitingInput();
+    }
 
     //освобождение ресурсов ncurses
     endwin();
+
+
 
     //сбрасываем локаль , иначе будет утечка памяти
     std::locale::global(std::locale("C"));

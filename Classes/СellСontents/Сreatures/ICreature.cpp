@@ -73,7 +73,7 @@ void ICreature::toDamage(ICreature* enemy) {
     notify<EventToAttack>(event);
 
     enemy->decreaseHealth(m_damage);
-
+    enemy->viewAttacked(); //визуализация
 }
 
 void ICreature::setLocation(int x, int y, Field* field) {
@@ -127,5 +127,23 @@ int ICreature::getArmor() {
 
 int ICreature::getDamage() {
     return m_damage;
+}
+
+void ICreature::increaseMaxHealth(int inc_health) {
+    m_max_health += inc_health;
+
+    EventChangeMaxHealth event(this, inc_health);
+    notify<EventChangeMaxHealth>(event);
+}
+
+void ICreature::decreaseMaxHealth(int dec_health) {
+    m_max_health -= dec_health;
+
+    EventChangeMaxHealth event(this, -dec_health);
+    notify<EventChangeMaxHealth>(event);
+}
+
+int ICreature::getSpeedMove() {
+    return (int)(100/m_interval_steps);
 }
 

@@ -7,7 +7,7 @@
 
 
 class Shield : public IItem {
-    int m_inc_armor = 20;
+    int m_inc_armor = 10;
 
 public:
     void affect(ICreature* creature) override;

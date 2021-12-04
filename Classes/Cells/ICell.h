@@ -2,6 +2,7 @@
 #define CONSOLE_GAME_ICELL_H
 
 #include "unq_p.h"
+#include "AttackedObj.h"
 
 class IItem;
 class ICreature;
@@ -14,7 +15,7 @@ enum TypeCell {
     TImpassableCell
 };
 
-class ICell {
+class ICell : public AttackedObj{
 public:
     //Возможность положить/просм/взять предмет (зелье, мечь, броня)
     virtual void putItem(unq_p<IItem> item) = 0;

@@ -28,11 +28,13 @@ public:
 
     void update();
     StateGame gameState();
+    void gameExit();
 
     Field* getField();
     Logger* getLogger();
     Player* getPlayer();
     void movePlayer(int inc_x, int inc_y);
+    void attackPlayer();
 
     std::string name() override;
 

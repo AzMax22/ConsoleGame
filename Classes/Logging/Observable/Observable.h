@@ -23,7 +23,7 @@ void Observable::notify(T& event) {
     if (m_logger == nullptr){
         return;
     }
-
+    //m_logger->somethingHappened();
     m_logger->processNotification(event);
 }
 

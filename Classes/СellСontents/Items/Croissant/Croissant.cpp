@@ -5,7 +5,7 @@ void Croissant::affect(ICreature *creature) {
     EventAffect event(this, creature);
     notify<EventAffect>(event);
 
-    creature->increaseHealth(m_inc_health);
+    creature->increaseMaxHealth(m_inc_health);
 }
 
 unq_p<IItem> Croissant::clone() {

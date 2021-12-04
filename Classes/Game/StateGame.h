@@ -5,7 +5,8 @@
 enum StateGame{
     RUN,
     WIN,
-    LOSE
+    LOSE,
+    EXIT
 };
 
 #endif //CONSOLE_GAME_STATEGAME_H

@@ -42,7 +42,8 @@ add_executable(Console_Game main.cpp
         Classes/СellСontents/LocatedObject.h Classes/Controler/Controler.inl
         Classes/Controler/Controler.h Classes/Controler/SetKeys.h
         Classes/Game/Rule/GenerationLevel.h Classes/Game/StateGame.h
-        Classes/Game/Rule/RuleSetLocatedGameObj.h Classes/Game/Rule/RWinAndLose.h)
+        Classes/Game/Rule/RuleSetLocatedGameObj.h Classes/Game/Rule/RWinAndLose.h
+        Classes/AttackedObj/AttackedObj.cpp Classes/AttackedObj/AttackedObj.h)
 
 target_include_directories(
         Console_Game                           # Цель, при сборке которой учитываются указанные пути к заголовочным файлам
@@ -85,6 +86,7 @@ target_include_directories(
         Classes/GameObject/
         Classes/Events/IEvent/
         Classes/Logging/IGeneratorLogMes/GeneratorLogMesRU/
+        Classes/AttackedObj/
 )
 
 target_link_libraries(Console_Game ncursesw)

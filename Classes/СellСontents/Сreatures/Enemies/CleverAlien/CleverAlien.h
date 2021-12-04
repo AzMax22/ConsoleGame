@@ -14,6 +14,7 @@ class CleverAlien : public ICreature {
     //bool   m_alive = true;
     Player* m_player;
 
+    void _move(ICell& next_cell, int inc_x,int inc_y);
 public:
     CleverAlien(Player* player = nullptr);
     void follow(Player* player);

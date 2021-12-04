@@ -16,7 +16,7 @@ Game<GenLevel, RSetLocatedObj, RWinAndLose>::Game(GenLevel& genlevel, RSetLocate
     auto cons_log = std::make_unique<ConsoleLog>();
     auto f_log = std::make_unique<FileLog>("flog.txt");
     m_logger = std::make_unique<Logger>(std::move(f_log));
-    m_logger->addLog(std::move(cons_log));
+
 
     //создание игрока
     m_player= r_set_located.getPlayer(m_field.get(), m_logger.get());
@@ -99,5 +99,15 @@ void Game<GenLevel, RSetLocatedObj, RWinAndLose>::movePlayer(int inc_x, int inc_
 template<class GenLevel, class RSetLocatedObj, class RWinAndLose>
 Player* Game<GenLevel, RSetLocatedObj, RWinAndLose>::getPlayer() {
     return m_player.get();
+}
+
+template<class GenLevel, class RSetLocatedObj, class RWinAndLose>
+void Game<GenLevel, RSetLocatedObj, RWinAndLose>::gameExit() {
+    state_game = EXIT;
+}
+
+template<class GenLevel, class RSetLocatedObj, class RWinAndLose>
+void Game<GenLevel, RSetLocatedObj, RWinAndLose>::attackPlayer() {
+    m_player->attack();
 }
 

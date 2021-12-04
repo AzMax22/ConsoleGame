@@ -21,7 +21,6 @@ void ViewCell::draw() {
     ColorText color_pair;
     const wchar_t* wstr;
 
-
     switch (m_cell->getTypeCell()) {
         case TNormalCell:
             color_background = COLOR_BLACK;
@@ -35,6 +34,11 @@ void ViewCell::draw() {
         case TImpassableCell:
             color_background = COLOR_CYAN;
             break;
+    }
+
+    if (m_cell->getCurrTimeViewAttacked() != 0) {
+        color_background = COLOR_RED;
+        m_cell->updateCurrTimeViewAttacked();
     }
 
 
@@ -72,7 +76,6 @@ void ViewCell::draw() {
 
 
     if (m_cell->topCreature()) { //проверка на nullptr
-
         switch (m_cell->topCreature()->getTypeCreature()) {
             case THorizontalSkeleton: {
                 color_foreground = COLOR_YELLOW;
@@ -100,31 +103,56 @@ void ViewCell::draw() {
 
             case TPlayer: {
                 color_foreground = COLOR_WHITE;
-                wstr = L"⮟ ";
 
+                auto player = dynamic_cast<Player *>(m_cell->topCreature());
+                int dir_horizontal = player->getHorizontalDirection();
+                int dir_vertical = player->getVerticalDirection();
+
+                if (dir_horizontal == 0 and dir_vertical == 1) {
+                    wstr = L"⮟ ";
+                }
+                if (dir_horizontal == 0 and dir_vertical == -1) {
+                    wstr = L"⮝ ";
+                }
+                if (dir_horizontal == 1 and dir_vertical == 0) {
+                    wstr = L"⮞ ";
+                }
+                if (dir_horizontal == -1 and dir_vertical == 0) {
+                    wstr = L"⮜ ";
+                }
                 break;
             }
 
             case TCleverAlien: {
-                wstr = L"👾";
+                attron(A_BOLD);
+                color_foreground = COLOR_YELLOW;
+                wstr = L"⍾ ";
                 break;
             }
 
 
         }
+        if (m_cell->topCreature()->getCurrTimeViewAttacked() != 0) {
+            color_foreground = COLOR_RED;
+            m_cell->topCreature()->updateCurrTimeViewAttacked();
+        }
+
         color_pair = _convertToColorPair(color_foreground, color_background);
         attron(COLOR_PAIR(color_pair));
         addwstr(wstr);
         attroff(COLOR_PAIR(color_pair));
+        attroff(A_BOLD);
         return;
-    }
 
+
+    }
 
 
     color_pair = _convertToColorPair(color_foreground, color_background);
     attron(COLOR_PAIR(color_pair));
     addwstr(L"  ");
     attroff(COLOR_PAIR(color_pair));
+
 }
 
 ColorText ViewCell::_convertToColorPair(int front, int back) {
@@ -152,4 +180,19 @@ ColorText ViewCell::_convertToColorPair(int front, int back) {
     if ((front == COLOR_YELLOW)and(back == COLOR_BLACK)){
         return Color_FYellow_BBlack;
     }
+    if ((front == COLOR_RED)and(back == COLOR_BLACK)){
+        return Color_FRed_BBlack;
+    }
+    if ((front == COLOR_BLUE)and(back == COLOR_RED)){
+        return Color_FBlue_BRed;
+    }
+    if ((front == COLOR_GREEN)and(back == COLOR_RED)){
+        return Color_FGreen_BRed;
+    }
+    if ((front == COLOR_MAGENTA)and(back == COLOR_BLACK)){
+        return Color_FMagneta_BBlack;
+    }
+
+
+    return Color_Default;
 }
