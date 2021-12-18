@@ -17,7 +17,7 @@ class HorizontalSkeleton : public ICreature{
 public:
     HorizontalSkeleton();
     void update() override; //реализация поведения
-    TypeCreature getTypeCreature() const override; //фун. возвращает тип обьекта через enum TypeCell
+    TypeGameObj getTypeCreature() const override; //фун. возвращает тип обьекта через enum TypeCell
     bool getPatrollingRight();
 
     std::string name() override;

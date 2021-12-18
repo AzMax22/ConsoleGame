@@ -4,15 +4,18 @@
 #include "ICell.h"
 #include <memory>
 #include "unq_p.h"
-
+#include <sstream>
+#include <vector>
 
 class BuilderField;//странно, но нужно //а точно для обявления дуж класссом
 
 class Field {
+    int m_level;
     int m_height, m_width; //значение рабочего поля без границы
     arr2d_unq<ICell> arr_cells; //arr2d_unq - двумерный массив умн. указателей
+    std::vector<IItem*> m_set_items;
 
-    Field(int width,int height);  //конструктор
+    Field(int level, int width,int height);  //конструктор
 
     //выделяет массив указазтелей для arr_cells
     arr2d_unq<ICell> _init_arr_cells(int width, int height);
@@ -37,6 +40,9 @@ public:
     int getHeight();
     int getWidth();
     ICell& getCell(int x, int y);
+    //void addItem()
+
+    std::string save();
 
     friend BuilderField;//чтобы строитель мог построить обьект
 };

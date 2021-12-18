@@ -111,3 +111,30 @@ void Game<GenLevel, RSetLocatedObj, RWinAndLose>::attackPlayer() {
     m_player->attack();
 }
 
+template<class GenLevel, class RSetLocatedObj, class RWinAndLose>
+bool Game<GenLevel, RSetLocatedObj, RWinAndLose>::save(std::string name) {
+    std::ofstream file;
+    std::string dir("Save") ;
+
+    error_code ec;
+    if (!filesystem::exists(dir) or !filesystem::is_directory( filesystem::status(dir))){
+        filesystem::create_directories(dir,ec);
+    }
+
+    if (ec){
+        return false;
+    }
+
+    string path(dir + "/" + name + ".save");
+    file.open(path);
+
+    file << m_field->save() << endl;
+    file << m_player->save() << endl;
+    file << m_set_update_obj[0]->save() << endl;
+
+
+    file.close();
+
+    return true;
+}
+

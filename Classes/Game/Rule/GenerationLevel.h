@@ -9,7 +9,7 @@ class GenerationLevel {
 
 public:
     unq_p<Field> generationField() {
-        builder.createEmptyField(20,20); //диапазон x = [1,20], y = [1,20]
+        builder.createEmptyField(0,20,20); //диапазон x = [1,20], y = [1,20]
         builder.buildEndCell(20, 20);
         return builder.getField();
     }
@@ -22,7 +22,7 @@ class GenerationLevel<1> {
 
 public:
     unq_p<Field> generationField() {
-        builder.createEmptyField(30,20); //диапазон x = [1,20], y = [1,20]
+        builder.createEmptyField(1,30,20); //диапазон x = [1,20], y = [1,20]
 
         builder.buildWall(6,1,6,5);
         builder.buildWall(1,5,2,5);

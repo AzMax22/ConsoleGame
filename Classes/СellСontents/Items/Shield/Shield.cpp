@@ -16,7 +16,7 @@ unq_p<IItem> Shield::clone() {
     return new_shield;
 }
 
-TypeItem Shield::getTypeItem() const {
+TypeGameObj Shield::getTypeItem() const {
     return TShield;
 }
 

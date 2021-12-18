@@ -6,13 +6,9 @@
 #include "LocatedObject.h"
 #include "Field.h"
 #include <utility>
+#include "TypeGameObj.h"
+#include <sstream>
 
-enum TypeCreature {
-    TPlayer,
-    THorizontalSkeleton,
-    TVerticalScorpion,
-    TCleverAlien
-};
 
 
 //интерфейс для обектов которые могут стоять на (содержатся в) Cell
@@ -60,8 +56,10 @@ public:
     int getY() override;
     int getSpeedMove();
 
+    std::string save() override;
+
     //фун. возвращает тип обьекта через enum TypeCreature
-    virtual TypeCreature getTypeCreature() const = 0 ;
+    virtual TypeGameObj getTypeCreature() const = 0 ;
 
     ~ICreature() override = default ;
 };

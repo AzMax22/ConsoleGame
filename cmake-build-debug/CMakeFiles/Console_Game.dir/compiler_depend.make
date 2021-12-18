@@ -191,16 +191,7 @@ CMakeFiles/Console_Game.dir/Classes/BuilderField/BuilderField.cpp.o: ../Classes/
   /usr/include/c++/9/pstl/glue_memory_defs.h \
   /usr/include/c++/9/pstl/execution_defs.h \
   ../Classes/AttackedObj/AttackedObj.h \
-  ../Classes/СellСontents/Сreatures/Player/Player.h \
-  ../Classes/СellСontents/Сreatures/ICreature.h \
-  ../Classes/СellСontents/IAutonomy.h \
-  ../Classes/Logging/Observable/Observable.h \
-  /usr/include/c++/9/vector \
-  /usr/include/c++/9/bits/stl_vector.h \
-  /usr/include/c++/9/bits/stl_bvector.h \
-  /usr/include/c++/9/bits/vector.tcc \
-  ../Classes/Logging/Logger/Logger.h \
-  /usr/include/c++/9/fstream \
+  /usr/include/c++/9/sstream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/bits/ios_base.h \
@@ -223,6 +214,17 @@ CMakeFiles/Console_Game.dir/Classes/BuilderField/BuilderField.cpp.o: ../Classes/
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/istream.tcc \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/СellСontents/Сreatures/Player/Player.h \
+  ../Classes/СellСontents/Сreatures/ICreature.h \
+  ../Classes/СellСontents/IAutonomy.h \
+  ../Classes/Logging/Observable/Observable.h \
+  /usr/include/c++/9/vector \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/vector.tcc \
+  ../Classes/Logging/Logger/Logger.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
@@ -232,6 +234,7 @@ CMakeFiles/Console_Game.dir/Classes/BuilderField/BuilderField.cpp.o: ../Classes/
   ../Classes/GameObject/GameObject.h \
   ../Classes/Game/StateGame.h \
   ../Classes/СellСontents/LocatedObject.h \
+  ../Classes/GameObject/TypeGameObj.h \
   ../Classes/Cells/StartCell/StartCell.h \
   ../Classes/Cells/NormalCell/NormalCell.h \
   ../Classes/СellСontents/Items/IItem.h \
@@ -497,6 +500,9 @@ CMakeFiles/Console_Game.dir/Classes/Cells/EndCell/EndCell.cpp.o: ../Classes/Cell
   ../Classes/Game/StateGame.h \
   ../Classes/СellСontents/LocatedObject.h \
   ../Classes/Field/Field.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h \
   ../Classes/СellСontents/Сreatures/Player/Player.h
 
 CMakeFiles/Console_Game.dir/Classes/Cells/NormalCell/NormalCell.cpp.o: ../Classes/Cells/NormalCell/NormalCell.cpp \
@@ -725,7 +731,10 @@ CMakeFiles/Console_Game.dir/Classes/Cells/NormalCell/NormalCell.cpp.o: ../Classe
   ../Classes/GameObject/GameObject.h \
   ../Classes/Game/StateGame.h \
   ../Classes/СellСontents/LocatedObject.h \
-  ../Classes/Field/Field.h
+  ../Classes/Field/Field.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/Cells/StartCell/StartCell.cpp.o: ../Classes/Cells/StartCell/StartCell.cpp \
   /usr/include/stdc-predef.h \
@@ -954,7 +963,10 @@ CMakeFiles/Console_Game.dir/Classes/Cells/StartCell/StartCell.cpp.o: ../Classes/
   ../Classes/GameObject/GameObject.h \
   ../Classes/Game/StateGame.h \
   ../Classes/СellСontents/LocatedObject.h \
-  ../Classes/Field/Field.h
+  ../Classes/Field/Field.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/Console/Console.cpp.o: ../Classes/Console/Console.cpp \
   /usr/include/stdc-predef.h \
@@ -1484,18 +1496,7 @@ CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.o: ../Classes/Field/Field.cp
   /usr/include/c++/9/pstl/glue_memory_defs.h \
   /usr/include/c++/9/pstl/execution_defs.h \
   ../Classes/AttackedObj/AttackedObj.h \
-  ../Classes/Cells/StartCell/StartCell.h \
-  ../Classes/Cells/NormalCell/NormalCell.h \
-  ../Classes/СellСontents/Items/IItem.h \
-  ../Classes/СellСontents/Сreatures/ICreature.h \
-  ../Classes/СellСontents/IAutonomy.h \
-  ../Classes/Logging/Observable/Observable.h \
-  /usr/include/c++/9/vector \
-  /usr/include/c++/9/bits/stl_vector.h \
-  /usr/include/c++/9/bits/stl_bvector.h \
-  /usr/include/c++/9/bits/vector.tcc \
-  ../Classes/Logging/Logger/Logger.h \
-  /usr/include/c++/9/fstream \
+  /usr/include/c++/9/sstream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/bits/ios_base.h \
@@ -1518,6 +1519,19 @@ CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.o: ../Classes/Field/Field.cp
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/istream.tcc \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/Cells/StartCell/StartCell.h \
+  ../Classes/Cells/NormalCell/NormalCell.h \
+  ../Classes/СellСontents/Items/IItem.h \
+  ../Classes/СellСontents/Сreatures/ICreature.h \
+  ../Classes/СellСontents/IAutonomy.h \
+  ../Classes/Logging/Observable/Observable.h \
+  /usr/include/c++/9/vector \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/vector.tcc \
+  ../Classes/Logging/Logger/Logger.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
@@ -1527,7 +1541,8 @@ CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.o: ../Classes/Field/Field.cp
   ../Classes/GameObject/GameObject.h \
   ../Classes/Game/StateGame.h \
   ../Classes/СellСontents/LocatedObject.h \
-  ../Classes/Field/Field.h
+  ../Classes/Field/Field.h \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/GameObject/GameObject.cpp.o: ../Classes/GameObject/GameObject.cpp \
   /usr/include/stdc-predef.h \
@@ -1913,7 +1928,10 @@ CMakeFiles/Console_Game.dir/Classes/Logging/Logger/Logger.cpp.o: ../Classes/Logg
   ../Classes/СellСontents/LocatedObject.h \
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
-  ../Classes/AttackedObj/AttackedObj.h
+  ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/Logging/Logs/ConsoleLog/ConsoleLog.cpp.o: ../Classes/Logging/Logs/ConsoleLog/ConsoleLog.cpp \
   /usr/include/stdc-predef.h \
@@ -2895,16 +2913,7 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewCell/ViewCell.cpp.o: ../Classes/Vie
   ../Classes/Game/Game.h \
   ../Classes/BuilderField/BuilderField.h \
   ../Classes/Field/Field.h \
-  ../Classes/СellСontents/Сreatures/Player/Player.h \
-  ../Classes/СellСontents/Сreatures/ICreature.h \
-  ../Classes/СellСontents/IAutonomy.h \
-  ../Classes/Logging/Observable/Observable.h \
-  /usr/include/c++/9/vector \
-  /usr/include/c++/9/bits/stl_vector.h \
-  /usr/include/c++/9/bits/stl_bvector.h \
-  /usr/include/c++/9/bits/vector.tcc \
-  ../Classes/Logging/Logger/Logger.h \
-  /usr/include/c++/9/fstream \
+  /usr/include/c++/9/sstream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/bits/ios_base.h \
@@ -2927,6 +2936,17 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewCell/ViewCell.cpp.o: ../Classes/Vie
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/istream.tcc \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/СellСontents/Сreatures/Player/Player.h \
+  ../Classes/СellСontents/Сreatures/ICreature.h \
+  ../Classes/СellСontents/IAutonomy.h \
+  ../Classes/Logging/Observable/Observable.h \
+  /usr/include/c++/9/vector \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/vector.tcc \
+  ../Classes/Logging/Logger/Logger.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
@@ -2936,12 +2956,30 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewCell/ViewCell.cpp.o: ../Classes/Vie
   ../Classes/GameObject/GameObject.h \
   ../Classes/Game/StateGame.h \
   ../Classes/СellСontents/LocatedObject.h \
+  ../Classes/GameObject/TypeGameObj.h \
   ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h \
   ../Classes/Logging/Logs/FileLog/FileLog.h \
   ../Classes/Logging/Logs/ConsoleLog/ConsoleLog.h \
-  /usr/include/c++/9/sstream \
-  /usr/include/c++/9/bits/sstream.tcc \
   ../Classes/Game/StateGame.h \
+  /usr/include/c++/9/filesystem \
+  /usr/include/c++/9/bits/fs_fwd.h \
+  /usr/include/c++/9/chrono \
+  /usr/include/c++/9/ratio \
+  /usr/include/c++/9/ctime \
+  /usr/include/c++/9/bits/parse_numbers.h \
+  /usr/include/c++/9/bits/fs_path.h \
+  /usr/include/c++/9/locale \
+  /usr/include/c++/9/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/9/bits/locale_conv.h \
+  /usr/include/c++/9/iomanip \
+  /usr/include/c++/9/bits/quoted_string.h \
+  /usr/include/c++/9/codecvt \
+  /usr/include/c++/9/bits/fs_dir.h \
+  /usr/include/c++/9/bits/fs_ops.h \
   ../Classes/Game/Game.inl \
   ../Classes/Game/Game.h \
   ../Classes/View/ViewField/ViewField.h \
@@ -3143,20 +3181,7 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewField/ViewField.cpp.o: ../Classes/V
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
   ../Classes/AttackedObj/AttackedObj.h \
-  ../Classes/View/ViewCell/ViewCell.h \
-  ../Classes/View/ViewGame/ViewGame.h \
-  ../Classes/Game/Game.h \
-  ../Classes/BuilderField/BuilderField.h \
-  ../Classes/СellСontents/Сreatures/Player/Player.h \
-  ../Classes/СellСontents/Сreatures/ICreature.h \
-  ../Classes/СellСontents/IAutonomy.h \
-  ../Classes/Logging/Observable/Observable.h \
-  /usr/include/c++/9/vector \
-  /usr/include/c++/9/bits/stl_vector.h \
-  /usr/include/c++/9/bits/stl_bvector.h \
-  /usr/include/c++/9/bits/vector.tcc \
-  ../Classes/Logging/Logger/Logger.h \
-  /usr/include/c++/9/fstream \
+  /usr/include/c++/9/sstream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/bits/ios_base.h \
@@ -3179,6 +3204,21 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewField/ViewField.cpp.o: ../Classes/V
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/istream.tcc \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/View/ViewCell/ViewCell.h \
+  ../Classes/View/ViewGame/ViewGame.h \
+  ../Classes/Game/Game.h \
+  ../Classes/BuilderField/BuilderField.h \
+  ../Classes/СellСontents/Сreatures/Player/Player.h \
+  ../Classes/СellСontents/Сreatures/ICreature.h \
+  ../Classes/СellСontents/IAutonomy.h \
+  ../Classes/Logging/Observable/Observable.h \
+  /usr/include/c++/9/vector \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/vector.tcc \
+  ../Classes/Logging/Logger/Logger.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
@@ -3188,12 +3228,30 @@ CMakeFiles/Console_Game.dir/Classes/View/ViewField/ViewField.cpp.o: ../Classes/V
   ../Classes/GameObject/GameObject.h \
   ../Classes/Game/StateGame.h \
   ../Classes/СellСontents/LocatedObject.h \
+  ../Classes/GameObject/TypeGameObj.h \
   ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h \
   ../Classes/Logging/Logs/FileLog/FileLog.h \
   ../Classes/Logging/Logs/ConsoleLog/ConsoleLog.h \
-  /usr/include/c++/9/sstream \
-  /usr/include/c++/9/bits/sstream.tcc \
   ../Classes/Game/StateGame.h \
+  /usr/include/c++/9/filesystem \
+  /usr/include/c++/9/bits/fs_fwd.h \
+  /usr/include/c++/9/chrono \
+  /usr/include/c++/9/ratio \
+  /usr/include/c++/9/ctime \
+  /usr/include/c++/9/bits/parse_numbers.h \
+  /usr/include/c++/9/bits/fs_path.h \
+  /usr/include/c++/9/locale \
+  /usr/include/c++/9/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/9/bits/locale_conv.h \
+  /usr/include/c++/9/iomanip \
+  /usr/include/c++/9/bits/quoted_string.h \
+  /usr/include/c++/9/codecvt \
+  /usr/include/c++/9/bits/fs_dir.h \
+  /usr/include/c++/9/bits/fs_ops.h \
   ../Classes/Game/Game.inl \
   ../Classes/Game/Game.h \
   ../Classes/View/ViewField/ViewField.h \
@@ -3653,7 +3711,10 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/Croissant/Croissant.cpp
   ../Classes/СellСontents/LocatedObject.h \
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
-  ../Classes/AttackedObj/AttackedObj.h
+  ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/IItem.cpp.o: ../Classes/СellСontents/Items/IItem.cpp \
   /usr/include/stdc-predef.h \
@@ -3880,7 +3941,10 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/IItem.cpp.o: ../Classes
   ../Classes/СellСontents/LocatedObject.h \
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
-  ../Classes/AttackedObj/AttackedObj.h
+  ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/Shield/Shield.cpp.o: ../Classes/СellСontents/Items/Shield/Shield.cpp \
   /usr/include/stdc-predef.h \
@@ -4108,7 +4172,10 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/Shield/Shield.cpp.o: ..
   ../Classes/СellСontents/LocatedObject.h \
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
-  ../Classes/AttackedObj/AttackedObj.h
+  ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/Sword/Sword.cpp.o: ../Classes/СellСontents/Items/Sword/Sword.cpp \
   /usr/include/stdc-predef.h \
@@ -4336,7 +4403,10 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Items/Sword/Sword.cpp.o: ../C
   ../Classes/СellСontents/LocatedObject.h \
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
-  ../Classes/AttackedObj/AttackedObj.h
+  ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.cpp.o: ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.cpp \
   /usr/include/stdc-predef.h \
@@ -4588,6 +4658,9 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Enemies/CleverAlie
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
   ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h \
   ../Classes/СellСontents/Сreatures/Player/Player.h
 
 CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.cpp.o: ../Classes/СellСontents/Сreatures/Enemies/HorizontalSkeleton/HorizontalSkeleton.cpp \
@@ -4816,6 +4889,9 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Enemies/Horizontal
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
   ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h \
   ../Classes/СellСontents/Сreatures/Player/Player.h
 
 CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.cpp.o: ../Classes/СellСontents/Сreatures/Enemies/VerticalScorpion/VerticalScorpion.cpp \
@@ -5043,7 +5119,10 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Enemies/VerticalSc
   ../Classes/СellСontents/LocatedObject.h \
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
-  ../Classes/AttackedObj/AttackedObj.h
+  ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/ICreature.cpp.o: ../Classes/СellСontents/Сreatures/ICreature.cpp \
   /usr/include/stdc-predef.h \
@@ -5269,7 +5348,10 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/ICreature.cpp.o: .
   ../Classes/СellСontents/LocatedObject.h \
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
-  ../Classes/AttackedObj/AttackedObj.h
+  ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h
 
 CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Player/Player.cpp.o: ../Classes/СellСontents/Сreatures/Player/Player.cpp \
   /usr/include/stdc-predef.h \
@@ -5497,6 +5579,9 @@ CMakeFiles/Console_Game.dir/Classes/СellСontents/Сreatures/Player/Player.cpp.
   ../Classes/Field/Field.h \
   ../Classes/Cells/ICell.h \
   ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  ../Classes/GameObject/TypeGameObj.h \
   ../Classes/СellСontents/Items/IItem.h
 
 CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
@@ -5710,6 +5795,8 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/9/pstl/glue_memory_defs.h \
   /usr/include/c++/9/pstl/execution_defs.h \
   ../Classes/AttackedObj/AttackedObj.h \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
   ../Classes/СellСontents/Сreatures/Player/Player.h \
   ../Classes/СellСontents/Сreatures/ICreature.h \
   ../Classes/СellСontents/IAutonomy.h \
@@ -5729,12 +5816,30 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
   ../Classes/GameObject/GameObject.h \
   ../Classes/Game/StateGame.h \
   ../Classes/СellСontents/LocatedObject.h \
+  ../Classes/GameObject/TypeGameObj.h \
   ../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.h \
   ../Classes/Logging/Logs/FileLog/FileLog.h \
   ../Classes/Logging/Logs/ConsoleLog/ConsoleLog.h \
-  /usr/include/c++/9/sstream \
-  /usr/include/c++/9/bits/sstream.tcc \
   ../Classes/Game/StateGame.h \
+  /usr/include/c++/9/filesystem \
+  /usr/include/c++/9/bits/fs_fwd.h \
+  /usr/include/c++/9/chrono \
+  /usr/include/c++/9/ratio \
+  /usr/include/c++/9/ctime \
+  /usr/include/c++/9/bits/parse_numbers.h \
+  /usr/include/c++/9/bits/fs_path.h \
+  /usr/include/c++/9/locale \
+  /usr/include/c++/9/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/9/bits/locale_conv.h \
+  /usr/include/c++/9/iomanip \
+  /usr/include/c++/9/bits/quoted_string.h \
+  /usr/include/c++/9/codecvt \
+  /usr/include/c++/9/bits/fs_dir.h \
+  /usr/include/c++/9/bits/fs_ops.h \
   ../Classes/Game/Game.inl \
   ../Classes/Game/Game.h \
   ../Classes/View/ViewField/ViewField.h \
@@ -5782,8 +5887,6 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 ../Classes/СellСontents/Сreatures/ICreature.cpp:
 
-../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.cpp:
-
 ../Classes/СellСontents/Items/Sword/Sword.h:
 
 ../Classes/СellСontents/Items/Sword/Sword.cpp:
@@ -5801,6 +5904,14 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/curses.h:
 
 ../Classes/View/ViewField/ViewField.h:
+
+../Classes/СellСontents/Сreatures/Enemies/CleverAlien/CleverAlien.cpp:
+
+/usr/include/c++/9/iomanip:
+
+/usr/include/c++/9/ratio:
+
+/usr/include/c++/9/chrono:
 
 ../Classes/Game/Game.h:
 
@@ -5823,8 +5934,6 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/ctime:
 
 /usr/include/c++/9/bits/locale_facets_nonio.h:
-
-/usr/include/c++/9/bits/sstream.tcc:
 
 ../Classes/Logging/Logs/ConsoleLog/ConsoleLog.h:
 
@@ -5880,6 +5989,8 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 ../Classes/Cells/StartCell/StartCell.h:
 
+../Classes/GameObject/TypeGameObj.h:
+
 ../Classes/View/ViewGame/ViewGame.inl:
 
 ../Classes/GameObject/GameObject.h:
@@ -5891,6 +6002,18 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
 
 /usr/include/c++/9/bits/codecvt.h:
+
+../Classes/Game/Rule/RWinAndLose.h:
+
+../Classes/СellСontents/Items/Shield/Shield.h:
+
+/usr/include/c++/9/bits/vector.tcc:
+
+/usr/include/c++/9/vector:
+
+../Classes/СellСontents/Сreatures/Player/Player.h:
+
+/usr/include/c++/9/bits/sstream.tcc:
 
 /usr/include/c++/9/bits/istream.tcc:
 
@@ -5909,28 +6032,6 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/9/bits/locale_facets.h:
-
-../Classes/Game/StateGame.h:
-
-/usr/include/c++/9/bits/basic_ios.h:
-
-/usr/include/c++/9/streambuf:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h:
-
-/usr/include/c++/9/codecvt:
-
-/usr/include/c++/9/system_error:
-
-/usr/include/c++/9/bits/locale_classes.tcc:
-
-../Classes/Game/Game.inl:
-
-/usr/include/c++/9/bits/ios_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/c++/9/ios:
 
 ../main.cpp:
 
@@ -5980,6 +6081,8 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/bits/stl_tempbuf.h:
 
+/usr/include/c++/9/filesystem:
+
 /usr/include/c++/9/bits/stl_relops.h:
 
 /usr/include/c++/9/bits/alloc_traits.h:
@@ -5998,9 +6101,17 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/sched.h:
 
+/usr/include/c++/9/bits/fs_ops.h:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/c++/9/bits/stl_construct.h:
+
+/usr/include/c++/9/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/9/cwchar:
 
 /usr/include/c++/9/bits/nested_exception.h:
 
@@ -6032,6 +6143,8 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/bits/functexcept.h:
 
+/usr/include/c++/9/bits/fs_fwd.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 ../Classes/BuilderField/BuilderField.cpp:
@@ -6044,6 +6157,8 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 ../unq_p.h:
 
+/usr/include/c++/9/streambuf:
+
 /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
@@ -6053,6 +6168,16 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/c++/9/bits/atomic_base.h:
+
+../Classes/Logging/Logs/ILog.h:
+
+../Classes/СellСontents/Сreatures/ICreature.h:
+
+/usr/include/c++/9/bits/basic_ios.tcc:
+
+/usr/include/c++/9/bits/stringfwd.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/c++/9/ext/aligned_buffer.h:
 
@@ -6065,12 +6190,6 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/linux/errno.h:
 
 /usr/include/c++/9/bits/refwrap.h:
-
-/usr/include/c++/9/bits/streambuf.tcc:
-
-../Classes/Logging/Observable/Observable.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
@@ -6092,9 +6211,9 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 ../Classes/View/ViewCell/ViewCell.h:
 
-/usr/include/c++/9/sstream:
-
 /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h:
+
+/usr/include/c++/9/sstream:
 
 /usr/include/c++/9/ext/type_traits.h:
 
@@ -6111,16 +6230,6 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/bits/hash_bytes.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-../Classes/Logging/Logs/ILog.h:
-
-/usr/include/c++/9/bits/basic_ios.tcc:
-
-/usr/include/c++/9/bits/stringfwd.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-../Classes/СellСontents/Сreatures/ICreature.h:
 
 /usr/include/c++/9/bits/postypes.h:
 
@@ -6156,13 +6265,23 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/bits/shared_ptr_base.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/c++/9/ios:
+
 /usr/include/c++/9/bits/predefined_ops.h:
 
 /usr/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+../Classes/Game/Game.inl:
+
+/usr/include/c++/9/bits/ios_base.h:
+
 /usr/include/c++/9/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/9/bits/parse_numbers.h:
 
 /usr/include/c++/9/locale:
 
@@ -6178,6 +6297,8 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/locale.h:
 
+/usr/include/c++/9/bits/fs_path.h:
+
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/9/bits/stl_iterator_base_funcs.h:
@@ -6189,12 +6310,6 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/c++/9/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
 
 /usr/include/c++/9/ostream:
 
@@ -6220,8 +6335,6 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-../Classes/СellСontents/Сreatures/Player/Player.h:
-
 /usr/include/c++/9/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
@@ -6239,6 +6352,12 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h:
+
+../Classes/Logging/Observable/Observable.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/c++/9/bits/streambuf.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
@@ -6274,9 +6393,13 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/pstl/execution_defs.h:
 
+/usr/include/c++/9/bits/fs_dir.h:
+
 ../Classes/AttackedObj/AttackedObj.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/c++/9/bits/quoted_string.h:
 
 /usr/include/stdlib.h:
 
@@ -6287,12 +6410,6 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/bits/allocated_ptr.h:
 
 /usr/include/c++/9/clocale:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/9/cwchar:
-
-/usr/include/c++/9/bits/stl_bvector.h:
 
 /usr/include/c++/9/cmath:
 
@@ -6360,12 +6477,6 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/string_view:
 
-../Classes/Game/Rule/RWinAndLose.h:
-
-../Classes/СellСontents/Items/Shield/Shield.h:
-
-/usr/include/c++/9/bits/vector.tcc:
-
 /usr/include/c++/9/tr1/gamma.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h:
@@ -6385,6 +6496,12 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/c++/9/fstream:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -6420,12 +6537,22 @@ CMakeFiles/Console_Game.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/bits/atomic_lockfree_defines.h:
 
-/usr/include/c++/9/vector:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+/usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/c++/9/fstream:
+/usr/include/c++/9/bits/locale_classes.h:
 
 /usr/include/c++/9/istream:
+
+/usr/include/c++/9/bits/locale_classes.tcc:
+
+/usr/include/c++/9/codecvt:
+
+/usr/include/c++/9/system_error:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h:
+
+../Classes/Game/StateGame.h:
+
+/usr/include/c++/9/bits/basic_ios.h:

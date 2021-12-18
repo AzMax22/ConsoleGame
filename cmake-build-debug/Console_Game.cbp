@@ -242,6 +242,9 @@
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/GameObject/GameObject.h">
 			<Option target="Console_Game"/>
 		</Unit>
+		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/GameObject/TypeGameObj.h">
+			<Option target="Console_Game"/>
+		</Unit>
 		<Unit filename="/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/Classes/Logging/Logger/Logger.cpp">
 			<Option target="Console_Game"/>
 		</Unit>

@@ -7,6 +7,7 @@ void IItem::setLocation(int x, int y, unq_p<IItem> myself, Field *field) {
         m_y = y;
         m_field = field;
         m_field->getCell(m_x, m_y).putItem(std::move(myself));
+        //m_field->m_set_items.push_back(this);
 
         EventSetLocation event(this);
         notify<EventSetLocation>(event);

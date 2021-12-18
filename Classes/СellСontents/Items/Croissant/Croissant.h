@@ -10,7 +10,7 @@ public:
 
     unq_p<IItem> clone() override;
 
-    TypeItem getTypeItem() const override ;
+    TypeGameObj getTypeItem() const override ;
 
     std::string name() override;
 };

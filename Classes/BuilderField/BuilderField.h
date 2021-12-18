@@ -11,7 +11,7 @@ class BuilderField  {
 
 public:
     BuilderField()=default;
-    void createEmptyField(int width, int height) ; //выделение памяти для поля
+    void createEmptyField(int level, int width, int height) ; //выделение памяти для поля
     void buildEndCell(int x, int y) ; //поставить на поле конечную клетку
     void buildEndCell() ; //поставить в случайное место на поле конечную клетку
     void buildImpassableCell(int x, int y) ; // поставить на поле непроходимую клетку

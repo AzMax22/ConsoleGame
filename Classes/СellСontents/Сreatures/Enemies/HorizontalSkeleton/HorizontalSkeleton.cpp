@@ -15,7 +15,7 @@ HorizontalSkeleton::HorizontalSkeleton(): ICreature(){
     m_time_last_attack = 0;
 }
 
-TypeCreature HorizontalSkeleton::getTypeCreature() const {
+TypeGameObj HorizontalSkeleton::getTypeCreature() const {
     return THorizontalSkeleton;
 }
 

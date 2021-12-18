@@ -19,7 +19,7 @@ public:
     CleverAlien(Player* player = nullptr);
     void follow(Player* player);
     void update() override; //реализация поведения
-    TypeCreature getTypeCreature() const override; //фун. возвращает тип обьекта через enum TypeCell
+    TypeGameObj getTypeCreature() const override; //фун. возвращает тип обьекта через enum TypeCell
 
     std::string name() override;
 

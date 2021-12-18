@@ -16,6 +16,8 @@ public:
     //отрисовка
     void update();
     void waitingInput();
+    void menuSaveGame();
+    void menuLoadSaveGame();
 
     ~Controler();
 };

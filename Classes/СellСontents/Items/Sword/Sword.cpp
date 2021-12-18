@@ -18,7 +18,7 @@ unq_p<IItem> Sword::clone() {
     return new_sword;
 }
 
-TypeItem Sword::getTypeItem() const {
+TypeGameObj Sword::getTypeItem() const {
     return TSword;
 }
 

@@ -49,7 +49,7 @@ void VerticalScorpion::update() {
 
 }
 
-TypeCreature VerticalScorpion::getTypeCreature() const {
+TypeGameObj VerticalScorpion::getTypeCreature() const {
     return TVerticalScorpion;
 }
 

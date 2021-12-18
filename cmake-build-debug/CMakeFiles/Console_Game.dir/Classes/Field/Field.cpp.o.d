@@ -148,16 +148,7 @@ CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.o: \
  /usr/include/c++/9/pstl/glue_memory_defs.h \
  /usr/include/c++/9/pstl/execution_defs.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/AttackedObj/AttackedObj.h \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Cells/StartCell/StartCell.h \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Cells/NormalCell/NormalCell.h \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/Items/IItem.h \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/ICreature.h \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/IAutonomy.h \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Logging/Observable/Observable.h \
- /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_vector.h \
- /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Logging/Logger/Logger.h \
- /usr/include/c++/9/fstream /usr/include/c++/9/istream \
+ /usr/include/c++/9/sstream /usr/include/c++/9/istream \
  /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
  /usr/include/c++/9/bits/locale_classes.tcc \
@@ -173,7 +164,17 @@ CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.o: \
  /usr/include/c++/9/bits/locale_facets.tcc \
  /usr/include/c++/9/bits/basic_ios.tcc /usr/include/c++/9/ostream \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/bits/istream.tcc \
- /usr/include/c++/9/bits/codecvt.h \
+ /usr/include/c++/9/bits/sstream.tcc /usr/include/c++/9/vector \
+ /usr/include/c++/9/bits/stl_vector.h \
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Cells/StartCell/StartCell.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Cells/NormalCell/NormalCell.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/Items/IItem.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/Сreatures/ICreature.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/IAutonomy.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Logging/Observable/Observable.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Logging/Logger/Logger.h \
+ /usr/include/c++/9/fstream /usr/include/c++/9/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
  /usr/include/c++/9/bits/fstream.tcc \
@@ -182,4 +183,5 @@ CMakeFiles/Console_Game.dir/Classes/Field/Field.cpp.o: \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/GameObject/GameObject.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Game/StateGame.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/LocatedObject.h \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Field/Field.h
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Field/Field.h \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/GameObject/TypeGameObj.h

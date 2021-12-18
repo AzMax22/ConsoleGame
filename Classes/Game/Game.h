@@ -10,9 +10,10 @@
 #include "Event.h"
 #include "Logger.h"
 #include "StateGame.h"
+#include <fstream>
+#include <filesystem>
 
-
-
+using namespace std;
 
 template<class GenLevel, class RSetLocatedObj, class RWinAndLose>
 class Game : public GameObject{
@@ -33,8 +34,11 @@ public:
     Field* getField();
     Logger* getLogger();
     Player* getPlayer();
+
     void movePlayer(int inc_x, int inc_y);
     void attackPlayer();
+
+    bool save(std::string name);
 
     std::string name() override;
 

@@ -73,7 +73,7 @@ void CleverAlien::update() {
 
 
 
-TypeCreature CleverAlien::getTypeCreature() const {
+TypeGameObj CleverAlien::getTypeCreature() const {
     return TCleverAlien;
 }
 

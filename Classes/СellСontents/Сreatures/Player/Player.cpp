@@ -25,7 +25,7 @@ void Player::decreaseMaxHealth(int dec_max_health) {
 }
 
 
-TypeCreature Player::getTypeCreature() const {
+TypeGameObj Player::getTypeCreature() const {
     return TPlayer;
 }
 
@@ -38,8 +38,12 @@ void Player::update() {
         increaseHealth(1);//реген
     }
 
-    m_time_last_step++;
-    m_time_last_attack++;
+    if (m_time_last_step < m_interval_steps) {
+        m_time_last_step++;
+    }
+    if (m_time_last_attack < m_interval_attacks){
+        m_time_last_attack++;
+    }
 }
 
 
@@ -122,6 +126,15 @@ void Player::attack() {
     }
 
     next_cell.viewAttacked(); //5 тактов будет показыватся атака клетки
+}
+
+std::string Player::save() {
+    std::ostringstream res;
+
+    res << m_interval_regen << " "; //интервал между регеном
+    res << m_time_last_regen << " ";
+
+    return ICreature::save() + res.str();
 }
 
 

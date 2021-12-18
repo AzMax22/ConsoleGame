@@ -13,7 +13,7 @@ unq_p<IItem> Croissant::clone() {
     return new_sword;
 }
 
-TypeItem Croissant::getTypeItem() const {
+TypeGameObj Croissant::getTypeItem() const {
     return TCroissant;
 }
 

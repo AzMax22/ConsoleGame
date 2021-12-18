@@ -4,8 +4,8 @@
 #include "ICreature.h"
 
 //конструктор
-Field::Field (int width,int height)
-: m_height(height-2), m_width(width-2)
+Field::Field (int level, int width,int height)
+: m_level(level),m_height(height-2), m_width(width-2)
 {
     arr_cells = _init_arr_cells( width, height);
 }
@@ -118,5 +118,13 @@ bool Field::_checkXY(int x, int y, TypeCell t_cell) {
         }
     }
     return false;
+}
+
+std::string Field::save() {
+    std::ostringstream res;
+
+    res << m_level << " "; //интервал между регеном
+
+    return res.str();
 }
 

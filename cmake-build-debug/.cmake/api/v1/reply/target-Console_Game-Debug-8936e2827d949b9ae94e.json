@@ -357,7 +357,8 @@
 				62,
 				63,
 				64,
-				66
+				66,
+				67
 			]
 		}
 	],
@@ -723,6 +724,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Classes/AttackedObj/AttackedObj.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Classes/GameObject/TypeGameObj.h",
 			"sourceGroupIndex" : 1
 		}
 	],

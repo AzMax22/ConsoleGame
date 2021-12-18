@@ -147,3 +147,22 @@ int ICreature::getSpeedMove() {
     return (int)(100/m_interval_steps);
 }
 
+std::string ICreature::save() {
+
+    std::ostringstream res;
+
+    res <<  getTypeCreature() << " ";
+    res <<  m_x  << " ";
+    res <<  m_y << " ";
+    res <<  m_max_health  << " ";
+    res <<  m_health << " ";
+    res << m_armor  << " ";
+    res << m_damage  << " ";
+    res << m_interval_steps  << " "; // интервал между шагами
+    res << m_time_last_step  << " ";
+    res << m_interval_attacks  << " ";//интервал между атаками
+    res << m_time_last_attack  << " ";
+
+    return res.str();
+}
+

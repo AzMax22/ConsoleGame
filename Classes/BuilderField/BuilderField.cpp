@@ -5,8 +5,8 @@
 #include "My_Exception.h"
 
 
-void BuilderField::createEmptyField(int width, int height)  {
-    m_field = unq_p<Field>(new Field(width+2, height+2)); //+2 для рамки поля
+void BuilderField::createEmptyField(int level, int width, int height)  {
+    m_field = unq_p<Field>(new Field(level, width+2, height+2)); //+2 для рамки поля
 
     int x = 0, y = 0;
 

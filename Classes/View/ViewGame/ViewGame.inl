@@ -7,7 +7,6 @@
 
 template<class TGame>
 ViewGame<TGame>::ViewGame(TGame &game) :m_game(game), m_view_field(m_game.getField()){
-    curs_set(0); //делает курсор невидимым
     start_color();
     use_default_colors();
 

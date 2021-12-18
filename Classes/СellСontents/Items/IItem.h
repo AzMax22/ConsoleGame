@@ -5,11 +5,7 @@
 #include "ICreature.h"
 
 
-enum TypeItem {
-    TSword,
-    TCroissant,
-    TShield
-};
+
 
 
 class IItem : public Observable, public LocatedObject {
@@ -23,7 +19,7 @@ public:
 
     virtual unq_p<IItem> clone() = 0;
 
-    virtual TypeItem getTypeItem() const = 0 ;
+    virtual TypeGameObj getTypeItem() const = 0 ;
 
     int getX() override;
     int getY() override;

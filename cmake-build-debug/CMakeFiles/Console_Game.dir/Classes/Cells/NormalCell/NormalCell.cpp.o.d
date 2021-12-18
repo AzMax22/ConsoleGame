@@ -180,4 +180,6 @@ CMakeFiles/Console_Game.dir/Classes/Cells/NormalCell/NormalCell.cpp.o: \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/GameObject/GameObject.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Game/StateGame.h \
  /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/СellСontents/LocatedObject.h \
- /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Field/Field.h
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/Field/Field.h \
+ /usr/include/c++/9/sstream /usr/include/c++/9/bits/sstream.tcc \
+ /home/maxim/Рабочий\ стол/Вуз/3\ сем/OOP/ConsoleGame/Classes/GameObject/TypeGameObj.h

@@ -3,6 +3,7 @@
 
 #include "Observable.h"
 
+
 //интерфейс классов котрые имею "автономное поведение" , независимое от игрока(человека)
 class IAutonomy : public Observable {
 protected:
@@ -12,6 +13,7 @@ public:
     virtual void death() = 0; //удаление обьекта
     bool getAlive();
     virtual ~IAutonomy() = default;
+    virtual std::string save() = 0;
 };
 
 

@@ -16,7 +16,7 @@ class VerticalScorpion : public ICreature{
 public:
     VerticalScorpion();
     void update() override; //реализация поведения
-    TypeCreature getTypeCreature() const override; //фун. возвращает тип обьекта через enum TypeCell
+    TypeGameObj getTypeCreature() const override; //фун. возвращает тип обьекта через enum TypeCell
     bool getPatrollingTop();
 
     std::string name() override;

@@ -28,11 +28,12 @@ public:
 
     void update() override ; //реализация поведения(отсутствует)
 
-    TypeCreature getTypeCreature() const override; //фун. возвращает тип обьекта через enum TypeCell
+    TypeGameObj getTypeCreature() const override; //фун. возвращает тип обьекта через enum TypeCell
 
     int getX();
     int getY();
 
+    std::string save() override;
 
     std::string name() override;
 
