@@ -1,3 +1,0 @@
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/maxim/Рабочий стол/Вуз/3 сем/OOP/ConsoleGame/cmake-build-debug/CMakeFiles/Console_Game.dir
