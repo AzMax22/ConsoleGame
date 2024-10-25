@@ -121,11 +121,19 @@ void Controler<TGame>::menuLoadSaveGame() {
     getstr(str);
 
     if (str[0] != '\0') {
-        addwstr(L"Загрузка...\n");
+        if(!m_game.loadSave(str)){
 
-        getch();
+            attron(COLOR_PAIR(Color_FRed_BDef));
+
+            printw("Невозможно загрузить игру (некоректное сохранение)\n");
+
+            attroff(COLOR_PAIR(Color_FRed_BDef));
+
+            printw("Нажмите Enter чтобы продолжить.\n", str);
+
+        }
     }
-
+    getch();
 
 
     curs_set(0);

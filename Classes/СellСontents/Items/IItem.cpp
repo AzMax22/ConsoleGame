@@ -7,7 +7,7 @@ void IItem::setLocation(int x, int y, unq_p<IItem> myself, Field *field) {
         m_y = y;
         m_field = field;
         m_field->getCell(m_x, m_y).putItem(std::move(myself));
-        //m_field->m_set_items.push_back(this);
+        m_field->addItemInVec(this);
 
         EventSetLocation event(this);
         notify<EventSetLocation>(event);
@@ -18,6 +18,7 @@ void IItem::setLocation(int x, int y, unq_p<IItem> myself, Field *field) {
 
 void IItem::deleteItem() {
     m_field->getCell(m_x, m_y).popItem().reset();
+    m_field->removeItemFromVec(this);
 
     EventDeath event(this);
     notify<EventDeath>(event);
@@ -29,4 +30,14 @@ int IItem::getX() {
 
 int IItem::getY() {
     return m_y;
+}
+
+std::string IItem::save() {
+    std::ostringstream res;
+
+    res << getTypeItem() << " ";
+    res << m_x << " ";
+    res << m_y << " ";
+
+    return  res.str();
 }

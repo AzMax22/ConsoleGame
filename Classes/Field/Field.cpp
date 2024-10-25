@@ -2,7 +2,7 @@
 #include "StartCell.h"
 #include "stdexcept"
 #include "ICreature.h"
-
+#include "ncursesw/ncurses.h"
 //конструктор
 Field::Field (int level, int width,int height)
 : m_level(level),m_height(height-2), m_width(width-2)
@@ -123,8 +123,34 @@ bool Field::_checkXY(int x, int y, TypeCell t_cell) {
 std::string Field::save() {
     std::ostringstream res;
 
-    res << m_level << " "; //интервал между регеном
+    res << m_level << "\n"; //интервал между регеном
+    res << m_set_items.size() << "\n";
+    for (IItem* item : m_set_items) {
+        res << item->save() << "\n";
+    }
 
     return res.str();
 }
+
+void Field::addItemInVec(IItem *item) {
+    m_set_items.push_back(item);
+}
+
+void Field::removeItemFromVec(IItem *item) {
+
+    for(int i = 0; i < m_set_items.size(); i++) {
+        if (m_set_items[i] == item) {
+            m_set_items.erase(m_set_items.begin() + i);
+        }
+    }
+}
+
+void Field::deleteItems() {
+    for(int i = 0; i < m_set_items.size(); i++) {
+        IItem* item = m_set_items.back();
+        arr_cells[item->getX()][item->getY()]->popItem().reset();
+        m_set_items.pop_back();
+    }
+}
+
 

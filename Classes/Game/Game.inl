@@ -1,6 +1,7 @@
 
 
 #include "Game.h"
+#include <ncursesw/ncurses.h>
 
 template<class GenLevel, class RSetLocatedObj, class RWinAndLose>
 Game<GenLevel, RSetLocatedObj, RWinAndLose>::Game(GenLevel& genlevel, RSetLocatedObj& r_set_located, RWinAndLose& r_win_lose)
@@ -128,9 +129,41 @@ bool Game<GenLevel, RSetLocatedObj, RWinAndLose>::save(std::string name) {
     string path(dir + "/" + name + ".save");
     file.open(path);
 
-    file << m_field->save() << endl;
+    file << m_field->save();
     file << m_player->save() << endl;
-    file << m_set_update_obj[0]->save() << endl;
+
+    file << m_set_update_obj.size() << endl;
+    for (int i = 0; i < m_set_update_obj.size();i++) {
+        file << m_set_update_obj[i]->save() << "\n";
+    }
+
+
+    file.close();
+
+    return true;
+}
+
+template<class GenLevel, class RSetLocatedObj, class RWinAndLose>
+bool Game<GenLevel, RSetLocatedObj, RWinAndLose>::loadSave(std::string name) {
+    save(".tmp");
+    m_field->deleteItems();
+
+    string line;
+    istringstream data_save;
+    std::ifstream file;
+    string path("Save/" + name + ".save");
+
+    file.open(path);
+    int level,n_items,n_creat;
+
+    file >> level;
+    file >> n_items;
+
+    for (int i = 0; i < n_items; i++){
+        getline(file,line);
+        data_save.str(line);
+    }
+
 
 
     file.close();

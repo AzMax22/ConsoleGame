@@ -131,6 +131,8 @@ void Player::attack() {
 std::string Player::save() {
     std::ostringstream res;
 
+    res << m_horizontal_direction << " ";
+    res << m_vertical_direction << " ";
     res << m_interval_regen << " "; //интервал между регеном
     res << m_time_last_regen << " ";
 

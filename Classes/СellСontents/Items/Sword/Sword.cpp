@@ -10,6 +10,7 @@ void Sword::affect(ICreature *creature) {
     notify<EventAffect>(event);
 
     creature->increaseDamage(m_inc_damage);
+    deleteItem();
 }
 
 

@@ -6,6 +6,7 @@ void Croissant::affect(ICreature *creature) {
     notify<EventAffect>(event);
 
     creature->increaseMaxHealth(m_inc_health);
+    deleteItem();
 }
 
 unq_p<IItem> Croissant::clone() {

@@ -40,9 +40,11 @@ public:
     int getHeight();
     int getWidth();
     ICell& getCell(int x, int y);
-    //void addItem()
+    void addItemInVec(IItem * item);
+    void removeItemFromVec(IItem * item);
 
     std::string save();
+    void deleteItems();
 
     friend BuilderField;//чтобы строитель мог построить обьект
 };

@@ -39,6 +39,7 @@ public:
     void attackPlayer();
 
     bool save(std::string name);
+    bool loadSave(std::string name);
 
     std::string name() override;
 

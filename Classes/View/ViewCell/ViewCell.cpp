@@ -59,7 +59,8 @@ void ViewCell::draw() {
 
             case TShield: {
                 color_foreground = COLOR_CYAN;
-                wstr = L"⛨ ";
+                wstr = L"🛡";
+
                 break;
             }
 
@@ -109,16 +110,16 @@ void ViewCell::draw() {
                 int dir_vertical = player->getVerticalDirection();
 
                 if (dir_horizontal == 0 and dir_vertical == 1) {
-                    wstr = L"⮟ ";
+                    wstr = L"⇓ ";
                 }
                 if (dir_horizontal == 0 and dir_vertical == -1) {
-                    wstr = L"⮝ ";
+                    wstr = L"⇑ ";
                 }
                 if (dir_horizontal == 1 and dir_vertical == 0) {
-                    wstr = L"⮞ ";
+                    wstr = L"⇒ ";
                 }
                 if (dir_horizontal == -1 and dir_vertical == 0) {
-                    wstr = L"⮜ ";
+                    wstr = L"⇐ ";
                 }
                 break;
             }

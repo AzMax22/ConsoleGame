@@ -25,6 +25,7 @@ public:
     int getY() override;
 
     virtual void deleteItem();
+    virtual std::string save();
 
     ~IItem()  = default;
 

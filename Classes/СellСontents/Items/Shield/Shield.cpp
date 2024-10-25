@@ -9,6 +9,7 @@ void Shield::affect(ICreature *creature) {
     notify<EventAffect>(event);
 
     creature->increaseArmor(m_inc_armor);
+    deleteItem();
 }
 
 unq_p<IItem> Shield::clone() {
